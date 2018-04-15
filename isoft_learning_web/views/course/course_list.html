@@ -1,0 +1,111 @@
+<script language="javascript" type="text/javascript" src="/static/common/raty-2.8.0/lib/jquery.raty.js"></script>
+<script type="text/javascript" src="/static/common/vue.min.js"></script>
+
+<link href="/static/module/homemanage/courselist/courselist.css" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="/static/common/paginator/css/paging.css">
+<script type="text/javascript" src="/static/common/paginator/js/query.js"></script>
+<script type="text/javascript" src="/static/common/paginator/js/paging.js"></script>
+
+<script src="/static/common/alert_info/js/classie.js"></script>
+<script src="/static/common/alert_info/js/modalEffects.js"></script>
+
+<script type="text/javascript" src="/static/module/homemanage/courselist/courselist.js"></script>
+
+<!-- bootstrap模态框弹出效果 -->
+<link href="/static/common/alert_info/css/component.css" rel="stylesheet">
+
+<div id="course_list">
+    <div v-cloak v-for="course in courses" style="border-bottom: 1px solid #b6acb7;padding: 15px;">
+        <article>
+            <header>
+                <h4 style="color: #0e97dc;">课程名称：[[ course.course_name ]]
+                    <span style="float: right;color: red;">[[ course.score ]]分</span><div class="star" style="float: right;" :score=" course.score "></div>
+                </h4>
+                <div style="clear:both;"></div>
+            </header>
+        </article>
+        <section>
+            <div style="float: left; margin-top:10px;width: 30%;">
+                <img :src=" course.small_image " height="120" width="200" onerror="javascript:this.src='/static/img/a.png';"/><br>
+                <a href="javascript:;" style="color: green;" class="md-trigger" :data-modal="'changeImage_' + course.id">换张图片</a>
+            </div>
+            <div style="float: left;width: 20%;">
+                <p style="color:#f55e13;font-family: Arial;font-weight: 700;font-size: 16px;">浏览量：[[ course.watch_number ]]</p>
+            </div>
+            <div style="float: left;width: 50%;">
+                <p>课程作者：[[ course.course_author ]]</p>
+                <p>课程内容类别：[[ course.course_type ]]</p>
+                <p>课程内容子类别：[[ course.course_sub_type ]]</p>
+                <p>课程简介：[[ course.course_short_desc ]]</p>
+                <p>课程得分：[[ course.score ]]</p>
+                <p>课程集数：[[ course.course_number ]]</p>
+                <p>课程更新状态：[[ course.course_status ]]
+                    <span v-if="course.course_status != '已完结'">
+                        <a href="javascript:;" :endUpdateRef=" course.id " onclick="endUpdate(this);" style="color: #f55e13;">完结更新</a>
+                    </span>
+                </p>
+                <p><a :href="'/course/showCourseDetail?id=' + course.id " style="color:green;font-family: Arial;font-weight: 700;">查看视频详情</a></p>
+                <p v-if="course.course_status != '已完结'">
+                    <a href="javascript:;" style="color:#f55e13;font-family: Arial;font-weight: 700;"
+                      class="md-trigger" :data-modal="'uploadvedio_' + course.id">上传/更新视频</a>
+                </p>
+            </div>
+            <div style="clear:both;"></div>
+        </section>
+
+        <!-- bootstrap模态框弹出效果,换张图片弹出 div -->
+        <!-- 使用了 vue 的 v-bind 特性绑定属性 -->
+        <div class="md-modal md-effect-1" :id="'changeImage_' + course.id">
+            <div class="md-content" style="height: 400px;">
+                <a href="#" class="md-close" style="float: right;margin: 10px;">X</a>
+                <h3>上传/更新图片</h3>
+                <div>
+                    <img class="changeImage" :src=" course.small_image " width="200px" height="150px">
+                    <input class="changeImageFile" type="file" name="changeImageFile" style="margin-top: 100px;"/>
+                    <button type="button" class="btn btn-success" :onclick="'changeImage(this, ' + course.id + ')'"
+                            style="float: right;width: 150px;">提交</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="md-overlay"></div>
+
+        <div class="md-modal md-effect-1" :id="'uploadvedio_' + course.id">
+            <div class="md-content" style="height: 400px;">
+                <a href="#" class="md-close" style="float: right;margin: 10px;">X</a>
+                <h3>上传/更新视频</h3>
+                <div>
+                    <p>课程名称:<strong>[[ course.course_name ]]</strong></p>
+                    <p>选择更新的集数：
+                        <ul id="course_number">
+                                <li onclick="setCheck(this);" v-for="cn in course.course_number">
+                                    <a href="javascript:;" :vedio_number=" cn ">[[ cn ]]</a>
+                                </li>
+                            <li class="last" onclick="setCheck(this);">
+                                <a href="javascript:;" :vedio_number=" course.course_number+1 ">新一集( [[ course.course_number+1 ]] )</a>
+                            </li>
+                        </ul>
+                        <div style="clear: both;"></div>
+                    </p>
+                    <p>
+                        <div class="progress" style="display: none;">
+                            <div class="progress-bar progress-bar-success" role="progressbar"
+                                 aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                                上传进度 0%
+                            </div>
+                        </div>
+                    </p>
+                    <p>
+                        <input name="vedio_number" type="hidden" value=""/>
+                        <input name="vedio" type="file" class="uploadVedioFile"/>
+                        <button type="button" class="btn btn-success" :onclick="'uploadVedio(this, ' + course.id + ')'"
+                                style="float: right;width: 150px;">提交</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="md-overlay"></div>
+    </div>
+</div>
+<div id="pageTool"></div>

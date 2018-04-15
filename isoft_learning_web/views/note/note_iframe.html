@@ -1,0 +1,17 @@
+<html>
+<head>
+    <title>Isoft注册账号</title>
+    <meta charset="utf-8">
+</head>
+<script src="/static/common/jquery-1.11.3.min.js"></script>
+<!-- 需要进行微调整 ckeditor 的默认样式文件 -->
+<link href="/static/common/ckeditor/contents_adjust.css" type="text/css" rel="stylesheet" />
+<body>
+
+<!-- 设置自动换行 -->
+<div class="ckeditor_show" style="white-space:normal;word-break:break-all;word-wrap:break-word;">
+{{ str2html .NoteContent }}
+</div>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<html>
+<head>
+    <title>Isoft注册账号</title>
+    <meta charset="utf-8">
+</head>
+<link rel="stylesheet" href="/static/css/initial.css"/>
+<link rel="stylesheet" href="/static/common/AmazeUI-2.7.2/assets/css/amazeui.css">
+<link rel="stylesheet" href="/static/common/AmazeUI-2.7.2/assets/css/app.css">
+<link rel="stylesheet" href="/static/common/bootstrap-3.3.7-dist/css/bootstrap.css"/>
+<script src="/static/common/jquery-1.11.3.min.js" type="text/javascript"></script>
+<script src="/static/common/AmazeUI-2.7.2/assets/js/amazeui.js" type="text/javascript"></script>
+<script src="/static/common/bootstrap-3.3.7-dist/js/bootstrap.js" type="text/javascript"></script>
+<script src="/static/js/jquery-ilearning-plugin.js" type="text/javascript"></script>
+<script>
+$(function () {
+    var personal = $("input[name='personal']").val();
+    if(personal == "personal"){
+        $(".personal").show();
+    }else{
+        $(".notpersonal").show();
+    }
+
+    $(".toggle_favorite").click(function () {
+        var request_href = $(this).attr("request_href");
+        var currentNode = this;
+        $.ajax({
+            url:request_href,
+            method:"post",
+            data:{},
+            success:function () {
+                var html = $(currentNode).html();
+                if(html.indexOf("收藏") > 0){
+                    if(html.indexOf("加入收藏") >= 0){
+                        $(currentNode).html("取消收藏");
+                    }else{
+                        $(currentNode).html("加入收藏");
+                    }
+                }
+            }
+        });
+    });
+});
+</script>
+<body>
+{{template "common/header.html"}}
+
+<script>
+    // iframe 高度自适应
+    function setIframeHeight(iframe) {
+        if (iframe) {
+            var iframeWin = iframe.contentWindow || iframe.contentDocument.parentWindow;
+            if (iframeWin.document.body) {
+                iframe.height = iframeWin.document.documentElement.scrollHeight || iframeWin.document.body.scrollHeight;
+            }
+        }
+    };
+</script>
+
+<div style="width: 92%;margin: 0 auto;">
+    <div style="float: left;width: 20%;padding: 20px;">
+        <input name="personal" value="{{ .Personal }}" type="hidden"/>
+        <span class="notpersonal" style="display: none;">
+            <a href="javascript:;" class="toggle_favorite"
+               request_href="/common/toggle_favorite?favorite_id={{ .Note.Id }}&favorite_type=note_collect" style="color:green;">
+                <span class="glyphicon glyphicon-tasks" aria-hidden="true">
+                {{if .NoteCollect}}
+                    取消收藏
+                {{else}}
+                    加入收藏
+                {{end}}
+                </span>
+            </a>
+        </span>
+
+
+    </div>
+    <div style="float: left;width: 80%;">
+        <iframe name="noteFrame" width="100%" src="/note/queryNoteHtmlById?note_id={{ .Note.Id }}"
+                frameborder="0" scrolling="no" onload="setIframeHeight(this)">
+        </iframe>
+    </div>
+</div>
+
+{{template "common/footer.html"}}
+{{template "common/rightmenu.html"}}
+</body>
+</html>

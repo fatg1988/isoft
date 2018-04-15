@@ -1,0 +1,10 @@
+/* Vue.js由于延时显示了 message 引用界面解决方法 定义v-cloak 的style */
+[v-cloak] {
+    display: none;
+}
+
+ #course_number li{float: left;margin: 5px;padding:0px;background-color: rgba(255, 148, 0, 0.38);width: 20px;
+     height: 20px;text-align: center;}
+#course_number li.checked{background-color: #ff9400;}
+#course_number li.last{width: 70px}
+#course_number li a{text-decoration:none; color: #FFFFFF;font-size:12px;}

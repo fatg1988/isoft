@@ -1,0 +1,20 @@
+<script>
+    $(function () {
+       $("#course_search input[type='submit']").click(function () {
+           var search = $("#course_search input[type='search']").val();
+           if(search.replace(/(^s*)|(s*$)/g, "").length > 0){
+               window.location.href="/course/search?search=" + search;
+           }
+       });
+    });
+</script>
+
+<div id="course_search" data-am-sticky style="background:rgba(255,1,24,0.59);height: 60px;">
+    <div style="position: relative;top:10px;float: left;left: 320px;">
+        <div id="_search">
+            <input type="search" id="mq" name="q" value="" title="请输入搜索文字" accesskey="s" x-webkit-speech="" x-webkit-grammar="builtin:translate" autocomplete="off" placeholder="Java"
+                   style="padding-left: 16px;float: left;width: 650px;background: #FFF;vertical-align: middle;height: 40px;box-shadow: none;-webkit-appearance: none;border: none;outline: 0;color: #333;font-size: 14px;">
+            <input type="submit" title="提交" style="background: url('/static/img/search.png') 50% 50% no-repeat;background-size: 24px;position: absolute;right: 10px;top: 15px;margin-top: -7px;width: 24px;height: 24px;border: none;color: transparent;box-sizing: initial;cursor: pointer;outline: 0;">
+        </div>
+    </div>
+</div>

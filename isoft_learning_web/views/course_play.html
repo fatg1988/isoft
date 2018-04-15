@@ -1,0 +1,38 @@
+<html>
+<link rel="stylesheet" href="/static/css/initial.css"/>
+<head>
+    <title>课程播放</title>
+    <meta charset="utf-8">
+</head>
+<link rel="stylesheet" href="/static/common/AmazeUI-2.7.2/assets/css/amazeui.css">
+<link rel="stylesheet" href="/static/common/AmazeUI-2.7.2/assets/css/app.css">
+<link rel="stylesheet" href="/static/common/bootstrap-3.3.7-dist/css/bootstrap.css"/>
+<script src="/static/common/jquery-1.11.3.min.js"></script>
+<script src="/static/common/AmazeUI-2.7.2/assets/js/amazeui.js"></script>
+<script src="/static/common/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="/static/common/vue.min.js"></script>
+<script src="/static/js/course/course_play.js"></script>
+<body>
+    {{template "common/header.html"}}
+
+    <!-- 缓存隐藏信息 -->
+    <input name="topic_id" value="{{ .CourseVedio.Id }}" type="hidden"/>
+    <input name="topic_type" value="course_vedio#id" type="hidden"/>
+    <input name="refer_user_name" value="{{ .Course.CourseAuthor }}" type="hidden"/>
+
+    <div style="width: 88%; height: 88%; margin: 0 auto;">
+        <video width="100%" height="100%" controls autoplay="autoplay">
+            <source src="{{ .CourseVedio.FirstPlay }}" type="video/mp4">
+            <source src="{{ .CourseVedio.SecondPlay }}" type="video/ogg">
+            您的浏览器不支持Video标签。
+        </video>
+    </div>
+
+    <div>
+        {{template "course/course_comment.html"}}
+    </div>
+
+    {{template "common/footer.html"}}
+    {{template "common/rightmenu.html"}}
+</body>
+</html>

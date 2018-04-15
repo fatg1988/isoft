@@ -1,0 +1,75 @@
+<html>
+<link rel="stylesheet" href="/static/css/initial.css"/>
+<head>
+    <title>Isoft注册账号</title>
+    <meta charset="utf-8">
+</head>
+<link rel="stylesheet" href="/static/common/AmazeUI-2.7.2/assets/css/amazeui.css">
+<link rel="stylesheet" href="/static/common/AmazeUI-2.7.2/assets/css/app.css">
+<link rel="stylesheet" href="/static/common/bootstrap-3.3.7-dist/css/bootstrap.css"/>
+<script src="/static/common/jquery-1.11.3.min.js"></script>
+<script src="/static/common/AmazeUI-2.7.2/assets/js/amazeui.js"></script>
+<script src="/static/common/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="/static/common/vue.min.js"></script>
+
+<script src="/static/common/ckeditor/ckeditor.js"></script>
+
+<link href="/static/module/note/css/style.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="/static/module/note/js/Validate.js"></script>
+<script type="text/javascript" src="/static/module/note/js/Validate.form.js"></script>
+<script type="text/javascript" src="/static/module/note/js/note_edit.js"></script>
+
+<body>
+{{template "common/header.html"}}
+
+<input name="note_id" type="hidden" value="{{ .NoteId }}"/>
+
+<div style="height: 1000px;">
+    <div style="float: left;height: 100%;width: 300px;border: 1px solid rgba(0,0,0,0.11);padding-left: 20px;">
+
+        <p style="margin-top: 10px;"><a href="javascript:;" style="color: red;">
+            已有 {{ .NoteOwnerTotalAmount }} 名参与者共编写了 {{ .NoteTotalAmount }} 篇精彩笔记</a>
+        </p>
+
+        <div id="formbox">
+            <form id="formpersonal" method="post" onsubmit="return false;">
+                <div class="form">
+                    <div class="item">
+                        <span class="label"><span class="red">*</span>笔记名称：</span><br/>
+                        <div class="fl">
+                            <input type="text" id="note_name" name="note_name" class="text"/>
+                            <label id="note_name_succeed" class="blank"></label>
+                            <span class="clear"></span>
+                            <div id="note_name_error"></div>
+                        </div>
+                    </div>
+                    <div class="area-item">
+                        <span class="label"><span class="red">*</span>检索关键词：</span><br/>
+                        <div class="fl">
+                            <textarea rel="textarea" id="note_key_words" name="note_key_words" rows="10" cols="50" class="textarea">
+                            </textarea>
+                            <label id="note_key_words_succeed" class="blank"></label>
+                            <span class="clear"></span>
+                            <div id="note_key_words_error"></div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <span class="label">&nbsp;</span>
+                        <input type="button" class="yellow_button" id="registsubmit" value="确定" tabindex="3"/>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <div style="float: right;height: 100%;width: calc(100% - 300px);">
+        <textarea name="editor" cols="20" rows="2" id="editor"></textarea>
+    </div>
+</div>
+
+
+{{template "common/footer.html"}}
+{{template "common/rightmenu.html"}}
+</body>
+</html>

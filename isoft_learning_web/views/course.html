@@ -1,0 +1,98 @@
+<html>
+<link rel="stylesheet" href="/static/css/initial.css"/>
+<head>
+    <title>Isoft注册账号</title>
+    <meta charset="utf-8">
+</head>
+<link rel="stylesheet" href="/static/common/AmazeUI-2.7.2/assets/css/amazeui.css">
+<link rel="stylesheet" href="/static/common/AmazeUI-2.7.2/assets/css/app.css">
+<link rel="stylesheet" href="/static/common/bootstrap-3.3.7-dist/css/bootstrap.css"/>
+<script src="/static/common/jquery-1.11.3.min.js"></script>
+<script src="/static/common/AmazeUI-2.7.2/assets/js/amazeui.js"></script>
+<script src="/static/common/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+<link rel="stylesheet" href="/static/common/jquery_popover/dist/jquery.webui-popover.css"/>
+<script src="/static/common/jquery_popover/dist/jquery.webui-popover.js"></script>
+<script language="javascript" type="text/javascript" src="/static/common/raty-2.8.0/lib/jquery.raty.js"></script>
+<link href="/static/common/tabfolder/style/common.css" rel="stylesheet" type="text/css">
+<link href="/static/css/course/course.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/static/common/tabfolder/js/tab.js"></script>
+<script type="text/javascript" src="/static/common/vue.min.js"></script>
+<script src="/static/js/course/course.js"></script>
+<style>
+    [v-cloak] {
+        display: none;
+    }
+</style>
+<body>
+    {{template "common/header.html"}}
+    <div id="nav">
+        {{template "search.html"}}
+
+        <input name="_course_search" value="{{ .Search }}" type="hidden"/>
+    </div>
+    <div id="vedioOuter">
+        <div id="vedioOrder">
+            <ul>
+                <li>
+                    <a href="#">评分</a>
+                </li>
+                <li>
+                    <a href="#">播放量</a>
+                </li>
+                <li>
+                    <a href="#">更新时间</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="vedioArea">
+            <div id="vedio">
+                <ul v-cloak v-for="course in courses">
+                    <li :course-id=" course.id ">
+                        <a :href="'/course/showCourseDetail?id=' + course.id "><img :src=" course.small_image "
+                            onerror="javascript:this.src='/static/img/a.png';"/></a>
+                        <dl>
+                            <dt>
+                                <a :href="'/course/showCourseDetail?id=' + course.id ">[[ course.course_name ]]</a>
+                            </dt>
+                            <dd>
+                                [[ course.course_short_desc ]]
+                            </dd>
+                        </dl>
+                    </li>
+
+                    <div class="popover" style="display: none;">
+                        <span class="title">
+                            <span style='margin-left: 10px;' class='star' :score=" course.score "></span>
+                            <span style='float: right;color: red;'> [[ course.score ]] 分</span>
+                        </span>
+                        <span class="content" :course_number=" course.course_number " :course_id=" course.id ">
+                            <ul>
+                                <li>
+                                    [[ course.course_status ]] : [[ course.course_number ]] 集
+                                </li>
+                                <li>
+                                    类型：<span class='coursetype'>[[ course.course_type ]]</span>
+                                </li>
+                                <li>
+                                    作者：<span class='courseauthor'>[[ course.course_author ]]</span>
+                                </li>
+                                <li>
+                                    简介：<span class='courseshortdes'>[[ course.course_short_desc ]]</span>
+                                </li>
+                                <li class="course_number"></li>
+                            </ul>
+                        </span>
+                    </div>
+                </ul>
+            </div>
+        </div>
+
+        <div class="not_found_course" style="display: none;text-align: center;padding:20px;">
+            未找到满足搜索条件的课程,<a href="/index?coursetypelist=coursetypelist" style="color: red;">查看更多课程分类</a>
+        </div>
+    </div>
+    {{template "common/footer.html"}}
+    {{template "common/rightmenu.html"}}
+</body>
+</html>

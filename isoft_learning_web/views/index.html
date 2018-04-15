@@ -1,0 +1,179 @@
+<html>
+<head>
+    <title>Isoft注册账号</title>
+    <meta charset="utf-8">
+</head>
+<link rel="stylesheet" href="/static/css/initial.css"/>
+<link rel="stylesheet" href="/static/common/AmazeUI-2.7.2/assets/css/amazeui.css">
+<link rel="stylesheet" href="/static/common/AmazeUI-2.7.2/assets/css/app.css">
+<link rel="stylesheet" href="/static/common/bootstrap-3.3.7-dist/css/bootstrap.css"/>
+<script src="/static/common/jquery-1.11.3.min.js" type="text/javascript"></script>
+<script src="/static/common/AmazeUI-2.7.2/assets/js/amazeui.js" type="text/javascript"></script>
+<script src="/static/common/bootstrap-3.3.7-dist/js/bootstrap.js" type="text/javascript"></script>
+<script src="/static/js/jquery-ilearning-plugin.js" type="text/javascript"></script>
+<style>
+    #_hot_recommend_ul li:hover{
+        background-color: #f4f4f4;
+        border: 1px solid #d0cdd2;
+    }
+</style>
+<body>
+    {{template "common/header.html"}}
+
+    <div id="nav">
+        {{template "search.html"}}
+
+        <input name="CourseTypeListShow" value="{{ .CourseTypeListShow }}" type="hidden"/>
+        {{template "course/course_type.html"}}
+
+        <div class="showListData" style="width: 88%;margin: 5px auto;">
+            <div class="showListDataLeftAreaParent" style="float:left;height: 450px;width: 20%;border: 2px solid #ff5000;">
+                <div class="showListDataLeftArea">
+
+                </div>
+            </div>
+            <div class="showListDataRightAreaParent" style="float:right;height: 450px;width: 80%;">
+                <div class="showListDataRightArea">
+
+                </div>
+                <div id="showListDataArea2">
+                    {{template "imgscanner.html"}}
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+
+    </div>
+
+    <div id="content" style="width: 100%;">
+        <div id="section">
+            <div style="width: 88%;min-height: 800px;margin: 20px auto;">
+                <div id="_hot_recommend" style="width: 100%;min-height: 400px;float: left;border: 1px solid #ccc;border-radius: 4px;margin-bottom: 20px;">
+                    <div style="width: 70%;background: #ffffff;;float: left;border: 1px solid #ccc;">
+                        <div style="background-color: #f6f6f6;height: 38px;border: 1px solid #ccc;">
+                            <h5 style="margin-left: 20px;">热门推荐</h5>
+                        </div>
+                        <div style="background: #ffffff;padding: 30px;padding-top: 5px;">
+                            <ul id="_hot_recommend_ul">
+                                {{range .Recommends}}
+                                    <li style="float: left;padding: 10px 9px 0;width: 140px;height: 125px;overflow: hidden;
+                                        text-align: center;position: relative;">
+                                        <a href="javascript:;" style="text-align: center;"
+                                            onclick="window.location.href='/course/showCourseDetail?id={{.Id}}'">
+                                            <img src="{{.SmallImage}}" height="90px" width="120px" onerror="javascript:this.src='/static/img/a.png';"/>
+                                            <p>{{.CourseShortDes}}</p>
+                                        </a>
+                                    </li>
+                                {{end}}
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div style="width: 30%;background: red;float: left;">
+                        <div style="background-color: #f6f6f6;height: 38px;border: solid 1px #d9d9d9;">
+                            <h5 style="float: left;line-height: 38px;margin-left: 20px;">新闻公告</h5>
+                            <a href="#" style="float: right;line-height: 38px;margin-right: 20px;color: red;">更多>></a>
+                        </div>
+                        <div style="background: #ffffff;font-size: 14px;padding-bottom: 10px;">
+                            <ul style="padding-left: 0em;">
+                                <li style="padding: 10px 15px 0 15px;">
+                                    <span style="float:right;color: #999;">02-21</span>
+                                    <a href="#" target="_blank" style="color: #f55e13!important;">
+                                        2018年起会员积分调整 <img src="/static/img/news.gif">
+                                    </a>
+                                </li>
+                                <li style="padding: 10px 15px 0 15px;">
+                                    <span style="float:right;color: #999;">02-21</span>
+                                    <a href="#" target="_blank" style="color: #f55e13!important;">
+                                        2018年起会员积分调整 <img src="/static/img/news.gif">
+                                    </a>
+                                </li>
+                                <li style="padding: 10px 15px 0 15px;">
+                                    <span style="float:right;color: #999;">02-21</span>
+                                    <a href="#" target="_blank">
+                                        2018年起会员积分调整
+                                    </a>
+                                </li>
+                                <li style="padding: 10px 15px 0 15px;">
+                                    <span style="float:right;color: #999;">02-21</span>
+                                    <a href="#" target="_blank">
+                                        2018年起会员积分调整
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div style="width: 30%;background: red;float: left;">
+                        <div style="background-color: #f6f6f6;height: 38px;border: solid 1px #d9d9d9;">
+                            <h5 style="float: left;line-height: 38px;margin-left: 20px;">热门问题</h5>
+                            <a href="#" style="float: right;line-height: 38px;margin-right: 20px;color: red;">我要提问>></a>
+                        </div>
+                        <div style="background: #ffffff;font-size: 14px;padding-bottom: 10px;">
+                            <ul style="padding-left: 0em;">
+                                <li style="padding: 10px 15px 0 15px;">
+                                    <span style="float:right;color: #999;">02-21</span>
+                                    <a href="#" target="_blank" style="color: #f55e13!important;">
+                                        Java泛型是什么? <img src="/static/img/news.gif">
+                                    </a>
+                                </li>
+                                <li style="padding: 10px 15px 0 15px;">
+                                    <span style="float:right;color: #999;">02-21</span>
+                                    <a href="#" target="_blank" style="color: #f55e13!important;">
+                                        Java反射是什么? <img src="/static/img/news.gif">
+                                    </a>
+                                </li>
+                                <li style="padding: 10px 15px 0 15px;">
+                                    <span style="float:right;color: #999;">02-21</span>
+                                    <a href="#" target="_blank">
+                                        Python难不难学?
+                                    </a>
+                                </li>
+                                <li style="padding: 10px 15px 0 15px;">
+                                    <span style="float:right;color: #999;">02-21</span>
+                                    <a href="#" target="_blank">
+                                        Go语言有发展前途么?
+                                    </a>
+                                </li>
+                                <li style="padding: 10px 15px 0 15px;">
+                                    <span style="float:right;color: #999;">02-21</span>
+                                    <a href="#" target="_blank">
+                                        如何快速赚取积分?
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="_fun_time" style="width: 100%;float: left;border: 1px solid #b3d5a8;border-radius: 4px;margin-top: 20px;">
+                    <div style="height: 30px;background: #eeffd9;">
+                        <a href="javascript:;" style="font-weight: bold;color: #448230;line-height: 30px;margin-left: 10px;">站点引导</a>
+                    </div>
+                    <div>
+                        <div style="min-height: 100px;border: 1px solid #b3d5a8;padding: 20px;">
+                            <p style="color: red;">版权说明</p>
+                            <p> * 本站点所有学习视频及学习资料所有权归视频创作者拥有</p>
+                            <p> * 未经许可禁止转载分发任何未授权的学习视频及学习资料</p>
+                        </div>
+                        <div style="min-height: 100px;border: 1px solid #b3d5a8;padding: 20px;">
+                            <p style="color: red;">我也想当老师</p>
+                            <p>
+                                查看 <a style="color: red;" href="javascript:void(0);" onclick="$('#teacher_qualification_guidance').toggleClass('hide')">开课流程</a><br>
+                            </p>
+                            <div id="teacher_qualification_guidance">
+                                {{template "teacher_qualification_guidance.html"}}
+                            </div>
+                            <p>
+                                已有开课认证资格，<a style="color: red;" href="/course/newcourse">立即开课</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{template "common/footer.html"}}
+    {{template "common/rightmenu.html"}}
+</body>
+</html>

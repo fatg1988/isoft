@@ -1,0 +1,104 @@
+<html>
+<head>
+    <title>Isoft注册账号</title>
+    <meta charset="utf-8">
+</head>
+<link rel="stylesheet" href="/static/css/initial.css"/>
+<link rel="stylesheet" href="/static/common/AmazeUI-2.7.2/assets/css/amazeui.css">
+<link rel="stylesheet" href="/static/common/AmazeUI-2.7.2/assets/css/app.css">
+<link rel="stylesheet" href="/static/common/bootstrap-3.3.7-dist/css/bootstrap.css"/>
+<script src="/static/common/jquery-1.11.3.min.js" type="text/javascript"></script>
+<script src="/static/common/AmazeUI-2.7.2/assets/js/amazeui.js" type="text/javascript"></script>
+<script src="/static/common/bootstrap-3.3.7-dist/js/bootstrap.js" type="text/javascript"></script>
+<script language="javascript" type="text/javascript" src="/static/common/raty-2.8.0/lib/jquery.raty.js"></script>
+<script language="javascript" type="text/javascript" src="/static/js/course/course_detail.js"></script>
+<script type="text/javascript" src="/static/common/vue.min.js"></script>
+{{template "common/header.html"}}
+
+<!-- 缓存隐藏信息 -->
+<input name="topic_id" value="{{ .Course.Id }}" type="hidden"/>
+<input name="topic_type" value="course#id" type="hidden"/>
+<input name="refer_user_name" value="{{ .Course.CourseAuthor }}" type="hidden"/>
+
+<div style="width: 92%;min-height: 500px;margin: 20px auto;">
+    <div style="width: 65%;min-height: 500px;float: left;">
+        <div>
+            <div style="float: left;width: 30%;margin-bottom: 50px;">
+                <img src="{{ .Course.SmallImage }}" height="120" width="200" onerror="javascript:this.src='/static/img/a.png';"/><br>
+            </div>
+            <div style="float: left;width: 70%;">
+                <p>
+                <h4 style="color: #0e97dc; width: 85%;">评分信息
+                    <span style="float: right;color: red;">{{ .Course.Score }}分</span>
+                    <div class="star" style="float: right;" score="{{ .Course.Score }}"></div>
+                </h4>
+                </p>
+                <p style="float: left;width: 50%;">课程名称：{{ .Course.CourseName }}</p>
+                <p style="float: left;width: 50%;">课程作者：{{ .Course.CourseAuthor }}</p>
+                <p style="float: left;width: 50%;">课程内容类别：{{ .Course.CourseType }}</p>
+                <p style="float: left;width: 50%;">课程内容子类别：{{ .Course.CourseSubType }}</p>
+                <p style="float: left;width: 50%;">课程简介：{{ .Course.CourseShortDes }}</p>
+                <p style="float: left;width: 50%;">课程得分：{{ .Course.Score }}</p>
+                <p style="float: left;width: 50%;">课程集数：{{ .Course.CourseNumber }}</p>
+                <p style="float: left;width: 50%;">课程更新状态：{{ .Course.CourseStatus }}</p>
+                <p>
+                    <a href="javascript:;" class="toggle_favorite" style="float: left;width: 50%;color: red;"
+                       request_href="/common/toggle_favorite?favorite_id={{ .Course.Id }}&favorite_type=course_collect">
+                    {{if .CourseCollect}}
+                        取消收藏
+                    {{else}}
+                        加入收藏
+                    {{end}}
+                    </a>
+                </p>
+                <p>
+                    <a href="javascript:;" class="toggle_favorite" style="float: left;width: 50%;color: red;"
+                       request_href="/common/toggle_favorite?favorite_id={{ .Course.Id }}&favorite_type=course_praise">
+                    {{if .CoursePraise}}
+                        取消赞
+                    {{else}}
+                        我要点赞
+                    {{end}}
+                    </a>
+                </p>
+            </div>
+            <div style="clear: both;"></div>
+
+            <ul>
+            {{ range $ind, $elem := .CourseVideo }}
+                <li style="padding:5px; float: left;width: 50%;">
+                    <a href="/course/play?course_id={{ .Course.Id }}&vedio_id={{ $elem.VedioNumber }}">
+                        第 {{ $elem.VedioNumber }} 集 {{ $elem.VedioName }}
+                    </a>
+                    <button type="button" class="btn btn-success btn-xs" style="float: right;margin-right: 10px;"
+                            onclick="window.location.href='/course/play?course_id={{ .Course.Id }}&vedio_id={{ $elem.VedioNumber }}'">立即观看</button>
+                </li>
+            {{ end }}
+            </ul>
+            <div style="clear: both;"></div>
+        </div>
+        <div>
+            {{template "course/course_comment.html"}}
+        </div>
+    </div>
+
+    <div style="width: 35%;min-height: 500px;border: 1px #dbdbdb solid;float: right;">
+        <div style="text-align:center;">
+            <a href="javascript:;" style="position: relative;color: #f40;display: block;height: 26px;line-height: 26px;
+                background: #ffe4dd;font-size: 12px;">非法/亚健康视频举报</a>
+        </div>
+        <ul>
+            <li style="float: left;margin: 10px;"><a href="/note/list">在线笔记</a></li>
+            <li style="float: left;margin: 10px;">课后练习</li>
+            <li style="float: left;margin: 10px;">名师课堂</li>
+            <li style="float: left;margin: 10px;">互动社区</li>
+            <li style="float: left;margin: 10px;">证书获取</li>
+            <li style="float: left;margin: 10px;">更多</li>
+        </ul>
+    </div>
+</div>
+
+{{template "common/footer.html"}}
+{{template "common/rightmenu.html"}}
+</body>
+</html>

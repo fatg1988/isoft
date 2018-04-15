@@ -1,0 +1,21 @@
+<script type="text/javascript">
+    $(function(){
+        window.setInterval(sendAdvertisement, 1000*100);
+    })
+
+    var i = 0;
+    function sendAdvertisement() {
+        i ++;
+        if(i > 1){
+            $("#advertisement").show();
+        }
+    }
+</script>
+
+<div id="advertisement" style="width: 300px;height: 80%;background: green;position: fixed;top:10%;right: 0;z-index: 9999;opacity:0.9;display: none;">
+    <a href="#" class="am-close am-close-spin" style="position: absolute;right: 8px;top: 8px;"
+       onclick="$(this).parent().hide();">&times;</a>
+    AAAAAAAAAAAAAAa
+</div>
+
+

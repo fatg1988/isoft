@@ -1,0 +1,56 @@
+<script>
+    $(function () {
+        var personal = $("input[name='personal']").val();
+        if(personal == "true"){
+            $(".personal").show();
+            var href = $(".note_view").attr("href");
+            $(".note_view").attr("href", href + "&personal=personal")
+        }else{
+            $(".notpersonal").show();
+        }
+    });
+</script>
+
+<input name="personal" type="hidden" value="{{ .Personal }}"/>
+
+<div class="row">
+    <div class="col-lg-6" style="margin-top: 5px; margin-right: 5px; float: right;">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="使用搜索关键词搜索相关笔记">
+            <span class="input-group-btn">
+        <button class="btn btn-default" type="button">Go!</button>
+      </span>
+        </div>
+    </div>
+</div>
+
+<ul>
+{{range $ind, $elem := .Notes}}
+    <li style="border-bottom: 1px solid rgb(182, 172, 183);padding: 15px;">
+        <ul>
+            <li>笔记名称：{{ $elem.NoteName }}
+                <span class="personal" style="display: none;">
+                    &nbsp<a href="/note/edit?note_id={{ $elem.Id }}" style="color:red;">
+                        <span class="glyphicon glyphicon-pencil" aria-hidden="true">编辑笔记</span>
+                    </a>
+                </span>
+                <span>
+                    <a class="note_view" href="/note/view?note_id={{ $elem.Id }}" style="color:red;">
+                        <span class="glyphicon glyphicon-pencil" aria-hidden="true">查看笔记</span>
+                    </a>
+                </span>
+            </li>
+            <li>作者：{{ $elem.NoteOwner }}</li>
+            <li>创建时间：{{ $elem.CreatedTime }}</li>
+            <li>编辑次数：{{ $elem.EditTime }}</li>
+            <li>浏览次数：{{ $elem.ViewTime }}</li>
+            <li>
+                500人觉得赞，500人觉得垃圾
+                &nbsp;<a href="/note/edit" style="color:red;"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true">查看所有评论</span></a>
+            </li>
+            <li>检索关键词：{{ $elem.NoteKeyWords }}</li>
+        </ul>
+    </li>
+{{end}}
+</ul>
+

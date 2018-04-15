@@ -1,0 +1,128 @@
+<link rel="stylesheet" type="text/css" href="/static/common/paginator/css/paging.css">
+<script type="text/javascript" src="/static/common/paginator/js/query.js"></script>
+<script type="text/javascript" src="/static/common/paginator/js/paging.js"></script>
+<script type="text/javascript" src="/static/common/vue.min.js"></script>
+
+<div style="border:1px solid #D1D1D1;min-height: 500px;">
+
+    <div class="row">
+        <div class="col-lg-6" style="margin-top: 5px; margin-right: 5px; float: right;">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="检索">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">Go!</button>
+                </span>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        $(function () {
+            // 定义一个全局的 vueData,初始数据为空
+            var appRegistersVueData = {
+                appRegisters:[]
+            };
+            // 定义一个全局的 vue 实例,引用这个全局的 vueData
+            var appRegistersVue = new Vue({
+                // 修改 vue 默认分隔符,解决冲突问题
+                delimiters: ['[[', ']]'],
+                el: '#appRegisters_list',
+                data: appRegistersVueData
+            });
+
+            function pageToolFunction(obj) {
+                // 渲染分页信息
+                $('#pageTool').Paging({pagesize: obj.paginator.pagesize,count:obj.paginator.totalcount,current:1,callback:function(page,size,count){
+                        loadPageData(page, size, null);
+                }});
+            }
+
+            function loadPageData(current_page,page_size,pageToolFunction) {
+                $.ajax({
+                    url:"/appregister/appRegisterList?current_page=" + current_page + "&offset=" + page_size,
+                    method:"post",
+                    async: false,
+                    success:function (data) {
+                        // 使用 $set 去修改这个 vueData 进行刷新页面
+                        appRegistersVue.$set(appRegistersVueData, 'appRegisters', data.appRegisters);
+                        if(pageToolFunction != null){
+                            pageToolFunction(data);              // 渲染分页
+                        }
+                    }
+                });
+            }
+            // 加载第一页,10条记录,加载完成之后使用 pageToolFunction 函数进行分页渲染
+            loadPageData(1,10,pageToolFunction);
+        });
+        function submitAppRegister() {
+            var appAddress = $("input[name='appAddress']").val();
+            $.ajax({
+                url:"/appregister/addAppRegister",
+                type:"post",
+                data:{"appAddress":appAddress},
+                success:function (data) {
+                    if(data.status == "SUCCESS"){
+                        window.location.reload();
+                    }else{
+                        alert(data.errorMsg);
+                    }
+                }
+            });
+        }
+    </script>
+
+    <div style="padding-left: 10px;">
+        <button type="button" class="btn btn-success btn-sm" style="width: 100px;"  data-toggle="modal" data-target="#myModal">新增</button>
+
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">系统注册</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form role="form">
+                            <div class="form-group">
+                                <label for="name">请不要使用非法字符</label>
+                                <input name="appAddress" type="text" class="form-control" placeholder="请输入系统注册地址">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                        <button type="button" class="btn btn-primary" onclick="submitAppRegister()">提交</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="appRegisters_list" style="margin: 10px;margin-top: 20px;">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>选择</th>
+                    <th>注册地址</th>
+                    <th>创建人</th>
+                    <th>创建时间</th>
+                    <th>修改人</th>
+                    <th>修改时间</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-cloak v-for="appRegister in appRegisters">
+                    <td><input name="checkbox" type="checkbox"/></td>
+                    <td>[[ appRegister.app_address ]]</td>
+                    <td>[[ appRegister.created_by ]]</td>
+                    <td>[[ appRegister.created_time ]]</td>
+                    <td>[[ appRegister.last_updated_by ]]</td>
+                    <td>[[ appRegister.last_updated_time ]]</td>
+                    <td>操作</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="pageTool"></div>
+</div>

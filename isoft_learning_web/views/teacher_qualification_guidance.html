@@ -1,0 +1,103 @@
+<link href="/static/common/flowchart/styles/css.css" type="text/css" rel="stylesheet" />
+<div id="img_bag" style="background: #ffffff;width: 300px;">
+    <div id="img" style="width: 300px;">
+        <div style="position:relative;">
+            <div class="online"></div>
+            <div class="ztb_main_01">
+                <ul class="ztb_content_01">
+                    <li class="ztb_over"><a href="#" class="ztb_con_text" onclick="clickli(this);">实名认证</a>
+                        <ul class="ztb_content_02">
+                            <li class="ztb_end"><a href="#">1.注册账号</a></li>
+                            <li class="ztb_end"><a href="#">2.上传身份证电子文件</a></li>
+                            <li class="ztb_end"><a href="#">3.完善用户资料</a></li>
+                        </ul>
+                    </li>
+                    <li class="ztb_over"><a href="#" class="ztb_con_text" onclick="clickli(this);">教师资格认证</a>
+                        <ul class="ztb_content_02" id="zb" style="display:block">
+                            <li class="ztb_end"><a href="#">1.上传教师类资格证书电子文件</a></li>
+                            <li class="ztb_end"><a href="#">2.填写版权声明意向书</a></li>
+                            <li class="ztb_end"><a href="#">3.上传视频作品</a></li>
+                            <li class="ztb_end"><a href="#">4.教师资格审核</a></li>
+                        </ul>
+                    </li>
+                    <li class="ztb_over"><a href="#" class="ztb_con_text" onclick="clickli(this);">教师等级评定</a>
+                        <ul class="ztb_content_02">
+                            <li class="ztb_end"><a href="#">1.课程体系规划</a></li>
+                            <li class="ztb_end"> <a href="#">2.教师等级评定</a></li>
+                        </ul>
+                    </li>
+                    <li class="ztb_on"> <a href="#"></a><a href="#" class="ztb_con_text" onclick="clickli(this);">教师领地</a>
+                        <ul class="ztb_content_02">
+                            <li class="ztb_active"><a href="#">1.课程管理</a></li>
+                            <li class="ztb_active"> <a href="#">2.账号管理</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function(){
+        $('ul.ztb_content_02 li').click(function(){
+
+            $(this).addClass('ztb_online').siblings('li.ztb_online').removeClass('ztb_online');
+            $(this).parents('li').siblings('li').children('ul').find('li.ztb_online').removeClass('ztb_online');
+        })
+    })
+</script>
+<script>
+    function clickli(dom){
+        var ul = $(dom).next('ul');
+        if (ul.is(":hidden")) {
+            ul.css('display','block')
+        }else{
+            ul.css('display','none')
+        }
+    }
+</script>
+
+<script type="text/javascript">
+    function js(obj){return document.getElementById(obj)}
+    var maxHeight=js("img").getElementsByTagName("ul")[0].getElementsByTagName("li").length*105;
+    //滚动图片的最大高度
+    var targety = 211;
+    //一次滚动距离
+    var dx;
+    var a=null;
+    function moveTop(){
+        var le=parseInt(js("img").scrollTop);
+        if(le>211){
+            targety=parseInt(js("img").scrollTop)-211;
+        }else{
+            targety=parseInt(js("img").scrollTop)-le-1;
+        }
+        scTop();
+    }
+    function scTop(){
+        dx=parseInt(js("img").scrollTop)-targety;
+        js("img").scrollTop-=dx*.3;
+        clearScroll=setTimeout(scTop,50);
+        if(dx*.3<1){
+            clearTimeout(clearScroll);
+        }
+    }
+    function moveBottom(){
+        var le=parseInt(js("img").scrollTop)+211;
+        var maxL=maxHeight-600;
+        if(le<maxL){
+            targety=parseInt(js("img").scrollTop)+211;
+        }else{
+            targety=maxL
+        }
+        scBottom();
+    }
+    function scBottom(){
+        dx=targety-parseInt(js("img").scrollTop);
+        js("img").scrollTop+=dx*.3;
+        a=setTimeout(scBottom,50);
+        if(dx*.3<1){
+            clearTimeout(a)
+        }
+    }
+</script>

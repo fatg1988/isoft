@@ -1,0 +1,88 @@
+<script src="/static/common/jsrender.min.js"></script>
+<script src="/static/js/course/jquery-comment.js"></script>
+
+<style>
+    #topic_theme{min-height: 20px;padding:20px;margin: 10px;margin-top: 100px;}
+    .left{float: left;}
+    .right{float: right;}
+    #topic_theme span{color: #e70010;font-size: 20px;margin-right: 10px;}
+    #reply_anchor{border-radius: 2px;margin: 10px;border: 1px #dbdbdb solid;}
+    .reply_anchor_header{background: #ececec;padding: 5px;}
+    .reply_anchor_header span{border-radius: 4px;height: 22px;line-height: 22px;display: block;background: #fe8f01;
+        color: #FFFFFF;width: 90px;text-align: center;float: left;}
+    .comment_form{padding:10px;}
+    .red{color: red;}
+    .comment_form .question{border-radius: 4px;height: 22px;line-height: 22px;display: block;background: #fe8f01;color: #FFFFFF;
+        width: 90px;text-align: center;float: right;}
+    .comment_form .question a{color: #FFFFFF;}
+    .sub_topic_reply{background: #f7f8fa;border: 1px solid #f0f1f2;display: none;}
+</style>
+
+<div id="#comment_component">
+    <article>
+        <header>
+            <div id="topic_theme">
+                <p class="left"><span>@</span>[[ topic_theme.topic_content ]]</p>
+                <p class="right">[[ topic_theme.created_time ]]</p>
+                <div style="clear: both;"></div>
+            </div>
+        </header>
+
+        <section id="reply_anchor">
+            <div class="reply_anchor_header">
+                <span>写下你的评论</span>
+                <a href="javascript:;" class="right" onclick="expand(this)">展开</a>
+                <div style="clear: both;"></div>
+            </div>
+            <div class="comment_form">
+                <div class="alert alert-success alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <strong><span class="red">*</span>温馨提醒!</strong> 学习上遇到难题，可以提出你的问题，我们会尽可能的为你寻求帮助~
+                    <span class="question">
+                    <a href="javascript:;">提出你的疑问</a>
+                </span>
+                </div>
+                <form>
+                    回复：<input name="_refer_user_name_label" type="text" value="回复@zhangsan" disabled="disabled"/><br/>
+                    内容：<textarea name="reply_content" rows="10" cols="100"></textarea><br/>
+                    <div style="text-align: center;margin-top: 10px;">
+                        <button type="button" class="btn btn-success btn-sm" id="submit_comment">提交评论</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <div style="border-bottom: 1px solid green;">
+            <ul>
+                <li><a href="javascript:;" style="float: left;">评论信息</a></li>
+                <li><a href="javascript:;" style="float: right;">热门评论</a></li>
+            </ul>
+            <div style="clear: both;"></div>
+        </div>
+        <section id="topic_reply_area"></section>
+    </article>
+</div>
+
+<script id="topic_reply_template" type="text/x-jsrender">
+[[for topic_replys]]
+    <div style="padding:5px;padding-left:10px;">
+        <div style="padding-top:10px;padding-bottom:10px;">
+            <p style="word-wrap:break-word;word-break:break-all;">
+                <span style="color: blue;">@[[:refer_user_name]]
+                    ([[:created_by]]回复于[[:created_time]])</span>
+                [[:reply_content]]
+                <span>
+                    &nbsp;&nbsp;&nbsp;
+                    <a href="javascript:;" style="color:green;"
+                        onclick="addSubReply(this,'[[:created_by]]', [[:id]])">回复他/她</a>&nbsp;&nbsp;&nbsp;
+                    <a href="javascript:;" style="color:red;" onclick="showSubReply(this,[[:id]])">查看所有回复([[:sub_reply_amount]])</a>
+                </span>
+            </p>
+            <div class="sub_topic_reply" id="sub_topic_reply_[[:id]]"></div>
+        </div>
+    </div>
+    [[if parent_id == 0]]
+        <hr>
+    [[/if]]
+[[/for]]
+</script>
