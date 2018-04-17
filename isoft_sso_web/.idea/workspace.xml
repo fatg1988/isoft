@@ -1,40 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="699a1250-18c5-405c-a8b8-9a683e0882a7" name="Default" comment="提交代码">
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_encrypt_decrypt_tool/aes.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_encrypt_decrypt_tool/aesgen.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_encrypt_decrypt_tool/aesutil.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/isoft_sso_web.iml" />
-      <change beforePath="$PROJECT_DIR$/../github.com/golang/dep" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../isoft_encrypt_decrypt_tool/demo.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../isoft_learning_web/controllers/comment.go" afterPath="$PROJECT_DIR$/../isoft_learning_web/controllers/comment.go" />
-      <change beforePath="$PROJECT_DIR$/../isoft_learning_web/controllers/common.go" afterPath="$PROJECT_DIR$/../isoft_learning_web/controllers/common.go" />
-      <change beforePath="$PROJECT_DIR$/../isoft_learning_web/controllers/course.go" afterPath="$PROJECT_DIR$/../isoft_learning_web/controllers/course.go" />
-      <change beforePath="$PROJECT_DIR$/../isoft_learning_web/controllers/default.go" afterPath="$PROJECT_DIR$/../isoft_learning_web/controllers/default.go" />
-      <change beforePath="$PROJECT_DIR$/../isoft_learning_web/controllers/note.go" afterPath="$PROJECT_DIR$/../isoft_learning_web/controllers/note.go" />
-      <change beforePath="$PROJECT_DIR$/../isoft_learning_web/ilearning/filter/filter.go" afterPath="$PROJECT_DIR$/../isoft_learning_web/ilearning/filter/filter.go" />
-      <change beforePath="$PROJECT_DIR$/../isoft_learning_web/ilearning/util/aesutil.go" afterPath="$PROJECT_DIR$/../isoft_learning_web/ilearning/util/aesutil.go" />
-      <change beforePath="$PROJECT_DIR$/../isoft_learning_web/ilearning/util/path.go" afterPath="$PROJECT_DIR$/../isoft_learning_web/ilearning/util/path.go" />
-      <change beforePath="$PROJECT_DIR$/../isoft_learning_web/main.go" afterPath="$PROJECT_DIR$/../isoft_learning_web/main.go" />
-      <change beforePath="$PROJECT_DIR$/../isoft_learning_web/models/comment.go" afterPath="$PROJECT_DIR$/../isoft_learning_web/models/comment.go" />
-      <change beforePath="$PROJECT_DIR$/../isoft_learning_web/models/common.go" afterPath="$PROJECT_DIR$/../isoft_learning_web/models/common.go" />
-      <change beforePath="$PROJECT_DIR$/../isoft_learning_web/models/course.go" afterPath="$PROJECT_DIR$/../isoft_learning_web/models/course.go" />
-      <change beforePath="$PROJECT_DIR$/../isoft_learning_web/models/note.go" afterPath="$PROJECT_DIR$/../isoft_learning_web/models/note.go" />
-      <change beforePath="$PROJECT_DIR$/../isoft_learning_web/routers/router.go" afterPath="$PROJECT_DIR$/../isoft_learning_web/routers/router.go" />
-      <change beforePath="$PROJECT_DIR$/../isoft_learning_web/tests/default_test.go" afterPath="$PROJECT_DIR$/../isoft_learning_web/tests/default_test.go" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    <list default="true" id="699a1250-18c5-405c-a8b8-9a683e0882a7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/controllers/appregister.go" afterPath="$PROJECT_DIR$/controllers/appregister.go" />
-      <change beforePath="$PROJECT_DIR$/controllers/default.go" afterPath="$PROJECT_DIR$/controllers/default.go" />
-      <change beforePath="$PROJECT_DIR$/controllers/loginrecord.go" afterPath="$PROJECT_DIR$/controllers/loginrecord.go" />
-      <change beforePath="$PROJECT_DIR$/controllers/user.go" afterPath="$PROJECT_DIR$/controllers/user.go" />
-      <change beforePath="$PROJECT_DIR$/ilearning/util/aesutil.go" afterPath="$PROJECT_DIR$/ilearning/util/aesutil.go" />
-      <change beforePath="$PROJECT_DIR$/main.go" afterPath="$PROJECT_DIR$/main.go" />
-      <change beforePath="$PROJECT_DIR$/models/user.go" afterPath="$PROJECT_DIR$/models/user.go" />
-      <change beforePath="$PROJECT_DIR$/routers/router.go" afterPath="$PROJECT_DIR$/routers/router.go" />
-      <change beforePath="$PROJECT_DIR$/tests/default_test.go" afterPath="$PROJECT_DIR$/tests/default_test.go" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -57,7 +25,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="comment.go" pinned="false" current-in-tab="false">
+      <file leaf-file-name="comment.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../isoft_learning_web/controllers/comment.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
@@ -65,16 +33,6 @@
               <folding>
                 <element signature="e#21#96#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="godep.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/godep.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="3" column="14" lean-forward="true" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -231,6 +189,11 @@
               <item name="isoft_sso_web" type="b2602c69:ProjectViewProjectNode" />
               <item name="isoft_sso_web" type="47feb1d3:ProjectViewModuleNode" />
             </path>
+            <path>
+              <item name="isoft_sso_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="isoft_sso_web" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="isoft_sso_web" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -242,7 +205,7 @@
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../godep.txt" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../isoft_learning_web/main.go" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.vendoring.notification.had.been.shown" value="true" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
@@ -277,7 +240,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Go Build.isoft_learning_web-build-run">
+    <configuration name="isoft_learning_web-build-run" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="isoft_sso_web" />
+      <working_directory value="D:\zhourui\program\go\goland_workspace\src\isoft_learning_web" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <filePath value="D:\zhourui\program\go\goland_workspace\src\isoft_learning_web\main.go" />
+      <directory value="$PROJECT_DIR$/" />
+    </configuration>
+    <configuration name="isoft_sso_web-build-run" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="isoft_sso_web" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <filePath value="D:\zhourui\program\go\goland_workspace\src\isoft_sso_web\main.go" />
+      <directory value="$PROJECT_DIR$/" />
+    </configuration>
     <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
       <module name="Isoft_sso" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -298,6 +277,10 @@
       <arguments />
       <envs />
     </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Go Build.isoft_sso_web-build-run" />
+      <item index="1" class="java.lang.String" itemvalue="Go Build.isoft_learning_web-build-run" />
+    </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -314,13 +297,13 @@
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38606912" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38606912" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289941" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.61301774" sideWeight="0.5151188" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991362" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6816568" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.61301774" sideWeight="0.48488122" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.57988167" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.57988167" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5727811" sideWeight="0.49784017" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -514,6 +497,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="25" column="15" lean-forward="false" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="15" />
+          <folding>
+            <element signature="e#36#86#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -521,6 +507,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -528,6 +515,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
           <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="e#14#64#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -535,6 +525,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
           <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -727,8 +718,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/godep.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="14" lean-forward="true" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+        <state relative-caret-position="120">
+          <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
           <folding />
         </state>
       </provider>
