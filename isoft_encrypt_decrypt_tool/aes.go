@@ -1,4 +1,4 @@
-package util
+package isoft_encrypt_decrypt_tool
 
 import (
 	"bytes"
@@ -6,6 +6,7 @@ import (
 	"crypto/cipher"
 )
 
+// 使用 aes 加密算法进行加密
 func AesEncrypt(origData, key []byte) ([]byte, error) {
 	block, err := aes.NewCipher(key)
 	if err != nil {

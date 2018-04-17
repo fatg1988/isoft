@@ -1,9 +1,9 @@
 package util
 
 import (
+	"bytes"
 	"crypto/aes"
 	"crypto/cipher"
-	"bytes"
 )
 
 func AesEncrypt(origData, key []byte) ([]byte, error) {

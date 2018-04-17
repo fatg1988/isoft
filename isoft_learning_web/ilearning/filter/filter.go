@@ -1,29 +1,29 @@
 package filter
 
 import (
-	"github.com/astaxie/beego/context"
-	"sync"
-	"github.com/astaxie/beego"
-	"net/http"
-	"io/ioutil"
 	"encoding/json"
-	"net/url"
 	"fmt"
+	"github.com/astaxie/beego"
+	"github.com/astaxie/beego/context"
+	"io/ioutil"
+	"net/http"
+	"net/url"
 	"strconv"
+	"sync"
 )
 
 var isoft_sso_url string
 
-func init()  {
+func init() {
 	isoft_sso_url = beego.AppConfig.String("isoft_sso_url")
 }
 
 func LoginFilter(ctx *context.Context) {
-	if !IsWhiteUrl(ctx){				// 判断是否是白名单中的地址
+	if !IsWhiteUrl(ctx) { // 判断是否是白名单中的地址
 		var hasLogin bool
 		// 从 cookie 中获取 token
 		token := ctx.GetCookie("token")
-		if token != ""{
+		if token != "" {
 			resp, err := http.Get(isoft_sso_url + "/user/checkLogin?token=" + url.QueryEscape(token))
 			defer resp.Body.Close()
 			if err == nil {
@@ -32,27 +32,27 @@ func LoginFilter(ctx *context.Context) {
 					jsonStr := string(body)
 					var jsonMap map[string]string
 					json.Unmarshal([]byte(jsonStr), &jsonMap)
-					if jsonMap["status"] == "SUCCESS"{
+					if jsonMap["status"] == "SUCCESS" {
 						ctx.Input.CruSession.Set("UserName", jsonMap["userName"])
 						ctx.Input.CruSession.Set("isLogin", jsonMap["isLogin"])
 						hasLogin = true
-					}else{
+					} else {
 						hasLogin = false
 					}
 				}
 			}
-		}else{
+		} else {
 			hasLogin = false
 		}
 
-		if !hasLogin{
+		if !hasLogin {
 			// 前去登录
 			RedirectToLogin(ctx, "")
 		}
 	}
 }
 
-var LoginWhiteList *map[string]string				// 登录白名单
+var LoginWhiteList *map[string]string // 登录白名单
 var once sync.Once
 
 func GetLoginWhiteList() *map[string]string {
@@ -69,20 +69,20 @@ func GetLoginWhiteList() *map[string]string {
 
 func IsWhiteUrl(ctx *context.Context) bool {
 	fmt.Printf(ctx.Input.URL())
-	if _,ok := (*GetLoginWhiteList())[ctx.Input.URL()]; ok{
+	if _, ok := (*GetLoginWhiteList())[ctx.Input.URL()]; ok {
 		return true
 	}
 	return false
 }
 
-func RedirectToLogin(ctx *context.Context, defaultRedirectUrl string){
+func RedirectToLogin(ctx *context.Context, defaultRedirectUrl string) {
 	scheme := ctx.Input.Scheme()
-	if defaultRedirectUrl != ""{
+	if defaultRedirectUrl != "" {
 		defaultRedirectUrl = isoft_sso_url + "/user/login?redirectUrl=" + defaultRedirectUrl
-	}else{
-		if scheme == "https"{
+	} else {
+		if scheme == "https" {
 			defaultRedirectUrl = isoft_sso_url + "/user/login?redirectUrl=" + ctx.Input.Site() + ctx.Input.URI()
-		}else{
+		} else {
 			defaultRedirectUrl = isoft_sso_url + "/user/login?redirectUrl=" + ctx.Input.Site() + ":" + strconv.Itoa(ctx.Input.Port()) + ctx.Input.URI()
 		}
 	}
@@ -90,7 +90,7 @@ func RedirectToLogin(ctx *context.Context, defaultRedirectUrl string){
 	return
 }
 
-func RedirectToLogout(ctx *context.Context, defaultRedirectUrl string){
+func RedirectToLogout(ctx *context.Context, defaultRedirectUrl string) {
 	// session 失效
 	ctx.Input.CruSession.SessionRelease(ctx.ResponseWriter)
 	// sso session失效

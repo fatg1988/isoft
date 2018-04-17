@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Isoft_sso.iml" filepath="$PROJECT_DIR$/.idea/Isoft_sso.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/isoft_sso_web.iml" filepath="$PROJECT_DIR$/.idea/isoft_sso_web.iml" />
     </modules>
   </component>
 </project>

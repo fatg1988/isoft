@@ -1,14 +1,14 @@
 package main
 
 import (
-	_ "isoft_learning_web/routers"
+	"fmt"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
-	"net/url"
-	"fmt"
-	_ "github.com/go-sql-driver/mysql"	// _ 的作用,并不需要把整个包都导入进来,仅仅是是希望它执行init()函数而已
-	"isoft_learning_web/models"
+	_ "github.com/go-sql-driver/mysql" // _ 的作用,并不需要把整个包都导入进来,仅仅是是希望它执行init()函数而已
 	"isoft_learning_web/ilearning/filter"
+	"isoft_learning_web/models"
+	_ "isoft_learning_web/routers"
+	"net/url"
 )
 
 func init() {
@@ -36,10 +36,10 @@ func init() {
 
 	registerModel()
 
-	createTable()      // 开启自动建表
+	createTable() // 开启自动建表
 }
 
-func registerModel()  {
+func registerModel() {
 	orm.RegisterModel(new(models.Course))
 	orm.RegisterModel(new(models.CourseVedio))
 	orm.RegisterModel(new(models.Favorite))
@@ -61,6 +61,6 @@ func createTable() {
 }
 
 func main() {
-	beego.InsertFilter("/*",beego.BeforeExec, filter.LoginFilter)
+	beego.InsertFilter("/*", beego.BeforeExec, filter.LoginFilter)
 	beego.Run()
 }

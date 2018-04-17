@@ -1,12 +1,12 @@
 package controllers
 
 import (
-	"isoft_sso_web/ilearning/util"
-	"isoft_sso_web/models"
 	"encoding/base64"
 	"encoding/json"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/session"
+	"isoft_sso_web/ilearning/util"
+	"isoft_sso_web/models"
 	"strings"
 	"time"
 )

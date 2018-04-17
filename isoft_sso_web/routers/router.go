@@ -1,8 +1,8 @@
 package routers
 
 import (
-	"isoft_sso_web/controllers"
 	"github.com/astaxie/beego"
+	"isoft_sso_web/controllers"
 )
 
 func init() {

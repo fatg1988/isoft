@@ -15,17 +15,17 @@ func (this *MainController) Get() {
 	this.TplName = "index.tpl"
 }
 
-func (this *MainController) Index()  {
+func (this *MainController) Index() {
 	coursetypelist := this.GetString("coursetypelist")
-	if(coursetypelist == "coursetypelist"){
+	if coursetypelist == "coursetypelist" {
 		this.Data["CourseTypeListShow"] = "CourseTypeListShow"
 	}
 
 	// 热门推荐,根据观看量查询前 50 个
 	condArr := make(map[string]string)
-	condArr["querysOrder"]="-watch_number"
-	courses,_,err := models.QueryCourse(condArr,1,50)
-	if err==nil{
+	condArr["querysOrder"] = "-watch_number"
+	courses, _, err := models.QueryCourse(condArr, 1, 50)
+	if err == nil {
 		this.Data["Recommends"] = courses
 	}
 
