@@ -1,105 +1,41 @@
 package controllers
 
 import (
-	"encoding/base64"
 	"encoding/json"
 	"github.com/astaxie/beego"
-	"github.com/astaxie/beego/session"
-	"isoft_sso_web/ilearning/util"
+	"isoft_sso_tools"
 	"isoft_sso_web/models"
 	"strings"
 	"time"
 )
 
 var originConfig string
-var aes_sso_key string
-
-var globalSessions *session.Manager
 
 func init() {
 	originConfig = beego.AppConfig.String("origin")
-	aes_sso_key = beego.AppConfig.String("aes_sso_key")
-
-	// 初始化一个全局的变量用来存储 session 控制器
-	sessionConfig := &session.ManagerConfig{
-		CookieName:      "beegosessionid", // 客户端存储 cookie 的名字
-		EnableSetCookie: true,
-		Gclifetime:      3600, // 触发 GC 的时间
-		Maxlifetime:     3600, // 服务器端存储的数据的过期时间
-		Secure:          false,
-		CookieLifeTime:  3600,
-	}
-	globalSessions, _ = session.NewManager("memory", sessionConfig)
-	go globalSessions.GC()
-
 }
 
 type UserController struct {
 	beego.Controller
 }
 
-func (this *UserController) DeleteToken() {
-	this.Data["json"] = &map[string]interface{}{"status": "ERROR", "msg": "Token 删除失败!"}
-	// 获取密文 token
-	token := this.GetString("token")
-	// 对密文 token 进行解密
-	key := []byte(aes_sso_key)
-	b, err := base64.StdEncoding.DecodeString(token)
-	if err != nil {
-		// 自定义解码方式,主要供非 go 代码方式调用
-		token = strings.Replace(token, "BAAAAAAAAB", "+", -1)
-		token = strings.Replace(token, "ABBBBBBBBA", "/", -1)
-		b, err = base64.StdEncoding.DecodeString(token)
-	}
-	origData, err := util.AesDecrypt(b, key)
-	if err == nil {
-		tokenStr := string(origData)
-		var tokenMap map[string]string
-		json.Unmarshal([]byte(tokenStr), &tokenMap)
-		ssoSessionId := tokenMap["ssoSessionId"]
-		sess, _ := globalSessions.GetSessionStore(ssoSessionId)
-		// session 释放
-		sess.SessionRelease(this.Ctx.ResponseWriter)
-		this.Data["json"] = &map[string]interface{}{"status": "SUCCESS", "msg": "Token 删除成功!"}
-	}
-	this.ServeJSON()
-}
-
-func (this *UserController) Logout() {
-	this.DelSession("username")
-	this.Redirect("/user/login", 302)
-}
-
-func (this *UserController) CheckLogin() {
-	this.Data["json"] = &map[string]interface{}{"userName": "", "status": "ERROR", "msg": "认证失败!"}
-
-	// 获取密文 token
-	token := this.GetString("token")
-	// 对密文 token 进行解密
-	key := []byte(aes_sso_key)
-	b, err := base64.StdEncoding.DecodeString(token)
-	if err != nil {
-		token = strings.Replace(token, "BAAAAAAAAB", "+", -1)
-		token = strings.Replace(token, "ABBBBBBBBA", "/", -1)
-		b, err = base64.StdEncoding.DecodeString(token)
-	}
-	origData, err := util.AesDecrypt(b, key)
-	if err == nil {
-		tokenStr := string(origData)
-		var tokenMap map[string]string
-		json.Unmarshal([]byte(tokenStr), &tokenMap)
-
-		ssoSessionId := tokenMap["ssoSessionId"]
-		userName := tokenMap["userName"]
-		isLogin := tokenMap["isLogin"]
-
-		sess, _ := globalSessions.GetSessionStore(ssoSessionId)
-		if sess.Get("userName") == userName && sess.Get("isLogin") == isLogin {
-			this.Data["json"] = &map[string]interface{}{"userName": tokenMap["userName"], "isLogin": tokenMap["isLogin"], "status": "SUCCESS", "msg": "认证成功!"}
-		} else {
-			// session 释放
-			sess.SessionRelease(this.Ctx.ResponseWriter)
+func (this *UserController) CheckOrInValidateTokenString() {
+	tokenString := this.GetString("tokenString")
+	username := this.GetString("username")
+	operateType := this.GetString("operateType")
+	if operateType == "check" {
+		this.Data["json"] = &map[string]interface{}{"status": "ERROR"}
+		username, err := isoft_sso_tools.ValidateAndParseJWT(tokenString)
+		if err == nil {
+			_, err = models.QueryUserToken(username)
+			if err == nil {
+				this.Data["json"] = &map[string]interface{}{"status": "SUCCESS"}
+			}
 		}
+	} else {
+		userToken, _ := models.QueryUserToken(username)
+		models.DeleteUserToken(userToken)
+		this.Data["json"] = &map[string]interface{}{"status": "SUCCESS"}
 	}
 	this.ServeJSON()
 }
@@ -183,28 +119,26 @@ func SuccessedLogin(username string, this *UserController, origin string, refere
 	loginLog.LastUpdatedBy = "SYSTEM"
 	loginLog.LastUpdatedTime = time.Now()
 	models.AddLoginRecord(loginLog)
-	// 将用户登录信息添加到 session 中去
-	this.SetSession("UserName", user.UserName)
-	sess, _ := globalSessions.SessionStart(this.Ctx.ResponseWriter, this.Ctx.Request)
-	sess.Set("ssoSessionId", sess.SessionID())
-	sess.Set("userName", user.UserName)
-	sess.Set("isLogin", "isLogin")
+
 	// 设置 cookie 信息
 	this.Ctx.ResponseWriter.Header().Set("Access-Control-Allow-Origin", "*")
-	token := make(map[string]string, 10)
-	token["ssoSessionId"] = sess.SessionID()
-	token["userName"] = username
-	token["isLogin"] = "isLogin"
-	b, er := json.Marshal(token)
-	if er == nil {
-		// 使用 AES 加密算法进行加密
-		key := []byte(aes_sso_key)
-		result, err := util.AesEncrypt([]byte(string(b)), key)
-		if err == nil {
-			// 加密成功后将密文 token 添加到 cookie 中
-			this.Ctx.SetCookie("token", base64.StdEncoding.EncodeToString(result), 100, "/")
-		}
+
+	tokenString, err := isoft_sso_tools.CreateJWT(username)
+	if err == nil {
+
+		var userToken models.UserToken
+		userToken.UserName = username
+		userToken.TokenString = tokenString
+		userToken.CreatedBy = "SYSTEM"
+		userToken.CreatedTime = time.Now()
+		userToken.LastUpdatedBy = "SYSTEM"
+		userToken.LastUpdatedTime = time.Now()
+		models.SaveUserToken(userToken)
+
+		// 设置 cookie 有效时间为 24 小时
+		this.Ctx.SetCookie("token", tokenString, 3600*24, "/")
 	}
+
 	// 则重定向到 redirectUrl,原生的方法是：w.Header().Set("Location", "http://www.baidu.com") w.WriteHeader(301)
 	this.Redirect(referers[1], 301)
 }

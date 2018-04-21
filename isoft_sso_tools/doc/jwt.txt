@@ -1,0 +1,21 @@
+// 1. Headers
+// 包括类别（typ）、加密算法（alg）；
+{
+  "alg": "HS256",
+  "typ": "JWT"
+}
+// 2. Claims
+// 包括需要传递的用户信息；
+{
+  "sub": "1234567890",
+  "name": "John Doe",
+  "admin": true
+}
+// 3. Signature
+// 根据alg算法与私有秘钥进行加密得到的签名字串；
+// 这一段是最重要的敏感信息，只能在服务端解密；
+HMACSHA256(
+    base64UrlEncode(header) + "." +
+    base64UrlEncode(payload),
+    SECREATE_KEY
+)

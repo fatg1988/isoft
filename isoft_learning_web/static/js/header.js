@@ -19,9 +19,9 @@ $(function () {
         var html = $(this).html();
         if(html == "注销"){
             var redirectUrl = document.location.href;
-            window.location.href = "/common/logout?redirectUrl=" + redirectUrl;
+            window.location.href = "/common/logout?redirectUrl=" + redirectUrl + "&time=" + new Date().getTime();
         }else{
-            window.location.href = "/common/login?redirectUrl=" + redirectUrl;
+            window.location.href = "/common/login?redirectUrl=" + redirectUrl + "&time=" + new Date().getTime();
         }
     });
-})
+});

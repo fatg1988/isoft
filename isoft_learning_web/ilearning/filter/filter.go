@@ -6,8 +6,8 @@ import (
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/context"
 	"io/ioutil"
+	"isoft_sso_tools"
 	"net/http"
-	"net/url"
 	"strconv"
 	"sync"
 )
@@ -20,26 +20,30 @@ func init() {
 
 func LoginFilter(ctx *context.Context) {
 	if !IsWhiteUrl(ctx) { // 判断是否是白名单中的地址
-		var hasLogin bool
+		hasLogin := false
 		// 从 cookie 中获取 token
-		token := ctx.GetCookie("token")
-		if token != "" {
-			resp, err := http.Get(isoft_sso_url + "/user/checkLogin?token=" + url.QueryEscape(token))
-			defer resp.Body.Close()
+		tokenString := ctx.GetCookie("token")
+		if tokenString != "" {
+			username, err := isoft_sso_tools.ValidateAndParseJWT(tokenString)
 			if err == nil {
-				body, err := ioutil.ReadAll(resp.Body)
+				resp, err := http.Get(isoft_sso_url + "/user/checkOrInValidateTokenString?tokenString=" + tokenString + "&operateType=check")
+				defer resp.Body.Close()
 				if err == nil {
-					jsonStr := string(body)
-					var jsonMap map[string]string
-					json.Unmarshal([]byte(jsonStr), &jsonMap)
-					if jsonMap["status"] == "SUCCESS" {
-						ctx.Input.CruSession.Set("UserName", jsonMap["userName"])
-						ctx.Input.CruSession.Set("isLogin", jsonMap["isLogin"])
-						hasLogin = true
-					} else {
-						hasLogin = false
+					body, err := ioutil.ReadAll(resp.Body)
+					if err == nil {
+						jsonStr := string(body)
+						var jsonMap map[string]string
+						json.Unmarshal([]byte(jsonStr), &jsonMap)
+						if jsonMap["status"] == "SUCCESS" {
+							hasLogin = true
+							// 登录信息认证通过
+							ctx.Input.CruSession.Set("UserName", username)
+						}
 					}
 				}
+			} else {
+				// 登录认证信息不通过
+				hasLogin = false
 			}
 		} else {
 			hasLogin = false
@@ -91,11 +95,14 @@ func RedirectToLogin(ctx *context.Context, defaultRedirectUrl string) {
 }
 
 func RedirectToLogout(ctx *context.Context, defaultRedirectUrl string) {
+	username := ctx.Input.CruSession.Get("UserName").(string)
+	// 使 tokenString 失效
+	resp, _ := http.Get(isoft_sso_url + "/user/checkOrInValidateTokenString?username=" + username + "&operateType=invalid")
+	defer resp.Body.Close()
+
 	// session 失效
 	ctx.Input.CruSession.SessionRelease(ctx.ResponseWriter)
-	// sso session失效
-	token := ctx.GetCookie("token") // 从 cookie 中获取 token
-	http.Get(isoft_sso_url + "/user/deleteToken?token=" + url.QueryEscape(token))
+
 	// 重新跳往登录页面
 	RedirectToLogin(ctx, defaultRedirectUrl)
 	return

@@ -42,6 +42,7 @@ func registerModel() {
 	orm.RegisterModel(new(models.User))
 	orm.RegisterModel(new(models.AppRegister))
 	orm.RegisterModel(new(models.LoginRecord))
+	orm.RegisterModel(new(models.UserToken))
 }
 
 // 自动建表

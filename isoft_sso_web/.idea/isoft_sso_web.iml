@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$/../isoft_encrypt_decrypt_tool" />
     <content url="file://$MODULE_DIR$/../isoft_learning_web" />
-    <content url="file://$MODULE_DIR$/../isoft_note_web" />
-    <content url="file://$MODULE_DIR$/../isoft_sso_client" />
+    <content url="file://$MODULE_DIR$/../isoft_sso_tools" />
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
