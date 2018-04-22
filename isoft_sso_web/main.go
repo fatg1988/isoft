@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"github.com/astaxie/beego"
+	"github.com/astaxie/beego/logs"
 	"github.com/astaxie/beego/orm"
 	_ "github.com/go-sql-driver/mysql" // _ 的作用,并不需要把整个包都导入进来,仅仅是是希望它执行init()函数而已
 	"isoft_sso_web/models"
@@ -10,7 +11,22 @@ import (
 	"net/url"
 )
 
+func initLog() {
+	// 控制台输出
+	logs.SetLogger(logs.AdapterConsole)
+	// 多文件输出
+	logs.SetLogger(logs.AdapterMultiFile,
+		`{"filename":"../../logs/isoft_sso_web.log","separate":["emergency", "alert", "critical", "error", "warning", "notice", "info", "debug"]}`)
+	// 输出文件名和行号
+	logs.EnableFuncCallDepth(true)
+	// 异步输出日志
+	logs.Async(1e3)
+}
+
 func init() {
+	// 初始化日志信息
+	initLog()
+
 	dbhost := beego.AppConfig.String("db.host")
 	dbport := beego.AppConfig.String("db.port")
 	dbname := beego.AppConfig.String("db.name")
