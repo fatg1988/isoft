@@ -1,0 +1,43 @@
+<link rel="stylesheet" type="text/css" href="/static/common/paginator/css/paging.css">
+<script type="text/javascript" src="/static/common/paginator/js/query.js"></script>
+<script type="text/javascript" src="/static/common/paginator/js/paging.js"></script>
+
+<script type="text/javascript" src="/static/common/vue.min.js"></script>
+<script type="text/javascript" src="/static/js/catalog/catalog_list.js"></script>
+
+<style>
+    [v-cloak] {
+        display: none;
+    }
+</style>
+
+<div>
+    <div id="catalog_list" style="padding-left: 50px;">
+        <ul v-cloak v-for="catalog in catalogs">
+            <li style="border-bottom: 1px solid #eee;">
+                <div>
+                    <label style="font-weight: bold;font-size: 14px;">分类名称：</label>
+                    <span style="padding: 2px 4px;font-size: 90%;color: #c7254e;background-color: #f9f2f4;border-radius: 4px;">
+                        [[ catalog.catalog_name ]]
+                    </span>
+                </div>
+                <div>
+                    <label style="font-weight: bold;font-size: 14px;">分类描述：</label><span>[[ catalog.catalog_desc ]]</span>
+                </div>
+                <div>
+                    <label style="font-weight: bold;font-size: 14px;">作者：</label><span>[[ catalog.author ]]</span>
+                </div>
+                <div>
+                    <label style="font-weight: bold;font-size: 14px;">创建时间：</label><span>[[ catalog.created_time ]]</span>
+                    <span>
+                        <button type="button" class="btn btn-primary btn-xs">编辑</button>
+                        <button type="button" class="btn btn-success btn-xs">修改</button>
+                        <button type="button" class="btn btn-info btn-xs">删除</button>
+                    </span>
+                </div>
+            </li>
+        </ul>
+        <div id="catalog_pageTool"></div>
+    </div>
+</div>
+

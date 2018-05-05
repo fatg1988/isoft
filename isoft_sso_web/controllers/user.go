@@ -3,7 +3,8 @@ package controllers
 import (
 	"encoding/json"
 	"github.com/astaxie/beego"
-	"isoft_sso_tools"
+	"github.com/astaxie/beego/logs"
+	"isoft/sso"
 	"isoft_sso_web/models"
 	"strings"
 	"time"
@@ -25,7 +26,7 @@ func (this *UserController) CheckOrInValidateTokenString() {
 	operateType := this.GetString("operateType")
 	if operateType == "check" {
 		this.Data["json"] = &map[string]interface{}{"status": "ERROR"}
-		username, err := isoft_sso_tools.ValidateAndParseJWT(tokenString)
+		username, err := sso.ValidateAndParseJWT(tokenString)
 		if err == nil {
 			_, err = models.QueryUserToken(username)
 			if err == nil {
@@ -123,7 +124,7 @@ func SuccessedLogin(username string, this *UserController, origin string, refere
 	// 设置 cookie 信息
 	this.Ctx.ResponseWriter.Header().Set("Access-Control-Allow-Origin", "*")
 
-	tokenString, err := isoft_sso_tools.CreateJWT(username)
+	tokenString, err := sso.CreateJWT(username)
 	if err == nil {
 
 		var userToken models.UserToken
@@ -227,5 +228,6 @@ func CheckOrigin(origin string) bool {
 	if origin == originConfig {
 		return true
 	}
+	logs.Warn("origin error for %s", origin)
 	return false
 }

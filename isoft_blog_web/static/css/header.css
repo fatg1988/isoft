@@ -1,0 +1,9 @@
+#header{height: 35px;background: #f5f5f5;font-size: 12px;}
+#header a{color: #666;text-decoration: none;}
+#header a:hover{color: red;text-decoration: none;}
+#header .left{float: left;list-style: none;display: block;margin-left: 20px;}
+#header .left li{float: left;display: list-item;width:65px;}
+#header li a{display:block;text-align:center;height:30px;line-height: 30px;}
+#header .right{float: right;list-style: none;display: block;margin-right: 20px;}
+#header .right li{float: left;display: list-item;width:65px;}
+#header .red{color:red;}

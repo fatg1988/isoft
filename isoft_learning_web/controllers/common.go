@@ -2,7 +2,7 @@ package controllers
 
 import (
 	"github.com/astaxie/beego"
-	"isoft_learning_web/ilearning/filter"
+	"isoft/sso"
 	"isoft_learning_web/models"
 )
 
@@ -48,10 +48,10 @@ func (this *CommonController) CheckLoginUser() {
 
 func (this *CommonController) Logout() {
 	redirectUrl := this.GetString("redirectUrl")
-	filter.RedirectToLogout(this.Ctx, redirectUrl)
+	sso.RedirectToLogout(this.Ctx, redirectUrl)
 }
 
 func (this *CommonController) Login() {
 	redirectUrl := this.GetString("redirectUrl")
-	filter.RedirectToLogin(this.Ctx, redirectUrl)
+	sso.RedirectToLogin(this.Ctx, redirectUrl)
 }

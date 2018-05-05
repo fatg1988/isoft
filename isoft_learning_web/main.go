@@ -5,7 +5,7 @@ import (
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
 	_ "github.com/go-sql-driver/mysql" // _ 的作用,并不需要把整个包都导入进来,仅仅是是希望它执行init()函数而已
-	"isoft_learning_web/ilearning/filter"
+	"isoft/sso"
 	"isoft_learning_web/models"
 	_ "isoft_learning_web/routers"
 	"net/url"
@@ -61,6 +61,6 @@ func createTable() {
 }
 
 func main() {
-	beego.InsertFilter("/*", beego.BeforeExec, filter.LoginFilter)
+	beego.InsertFilter("/*", beego.BeforeExec, sso.LoginFilter)
 	beego.Run()
 }

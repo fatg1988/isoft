@@ -6,6 +6,7 @@ import (
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/utils/pagination"
 	"github.com/satori/go.uuid"
+	"isoft/common"
 	"isoft_learning_web/ilearning/util"
 	"isoft_learning_web/models"
 	"path"
@@ -317,7 +318,7 @@ func (this *CourseController) QueryCourse() {
 
 	if err == nil {
 		data["courses"] = courses
-		data["paginator"] = util.Paginator(paginator.Page(), paginator.PerPageNums, paginator.Nums())
+		data["paginator"] = common.Paginator(paginator.Page(), paginator.PerPageNums, paginator.Nums())
 	}
 	//序列化
 	json_obj, err := json.Marshal(data)

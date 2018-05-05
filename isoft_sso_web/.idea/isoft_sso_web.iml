@@ -2,8 +2,9 @@
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$/../github.com/ulricqin/beego-blog" />
+    <content url="file://$MODULE_DIR$/../isoft_blog_web" />
     <content url="file://$MODULE_DIR$/../isoft_learning_web" />
-    <content url="file://$MODULE_DIR$/../isoft_sso_tools" />
+    <content url="file://$MODULE_DIR$/../isoft" />
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

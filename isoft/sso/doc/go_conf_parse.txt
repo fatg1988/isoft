@@ -1,0 +1,4 @@
+encoding/json -- 标准库中的包,可以处理JSON配置文件,缺点是不能加注释
+gcfg -- 处理INI配置文件
+toml -- 处理TOML配置文件
+viper -- 处理JSON, TOML, YAML, HCL以及Java properties配置文件

@@ -1,0 +1,44 @@
+<script src="/static/common/ckeditor/ckeditor.js"></script>
+<script src="/static/js/blog/blog_add.js"></script>
+
+<div id="blog_add" style="padding-left: 50px;">
+    <form role="form" method="post">
+        <div class="row form-group">
+            <div class="col-xs-6">
+                <input type="text" class="form-control" placeholder="博文标题" name="blog_title">
+            </div>
+            <div class="col-xs-6">
+                <input type="text" class="form-control" placeholder="搜索关键词" name="key_words">
+            </div>
+        </div>
+        <div class="row form-group">
+            <div class="col-xs-4">
+                <select class="form-control" name="catalog_id">
+                {{range .Catalogs}}
+                    <option value="{{.Id}}">{{.CatalogName}}</option>
+                {{end}}
+                </select>
+
+            </div>
+            <div class="col-xs-2">
+                <select class="form-control" name="blog_type">
+                    <option value="0">原创</option>
+                    <option value="1">翻译</option>
+                    <option value="2">转载</option>
+                </select>
+
+            </div>
+            <div class="col-xs-2">
+                <select class="form-control" name="blog_status">
+                    <option value="1">立即发布</option>
+                    <option value="0">保存草稿</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="submitBlog();return false;">提交</button>
+        </div>
+
+        <div>
+            <textarea name="content" cols="20" rows="2" id="editor"></textarea>
+        </div>
+    </form>
+</div>

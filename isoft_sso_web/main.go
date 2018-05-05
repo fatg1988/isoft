@@ -7,7 +7,8 @@ import (
 	"github.com/astaxie/beego/orm"
 	_ "github.com/go-sql-driver/mysql" // _ 的作用,并不需要把整个包都导入进来,仅仅是是希望它执行init()函数而已
 	"isoft_sso_web/models"
-	_ "isoft_sso_web/routers"
+	_ "isoft_sso_web/routers" // 经常看到Golang代码中出现 _ "controller/home" 类似这种的引用,这里的下划线有什么作用呢?
+	// 其实默认每个文件都有一个init函数,加下划线表示引入这个包,仅执行init函数
 	"net/url"
 )
 

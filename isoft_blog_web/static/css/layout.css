@@ -1,0 +1,23 @@
+.social a.github {background: url('/static/img/social/github.png') center no-repeat #afb6ca;border: 1px solid #afb6ca;}
+
+.social a {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    zoom: 1;
+    text-indent: -9999px;
+    margin-right: 5px;
+    margin-bottom: 15px;
+    opacity: 0.5;
+    width: 28px;
+    height: 28px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}

@@ -1,6 +1,7 @@
 package models
 
 import (
+	"github.com/astaxie/beego/logs"
 	"github.com/astaxie/beego/orm"
 	"time"
 )
@@ -27,6 +28,7 @@ func CheckRegister(app_address string) bool {
 	if err == nil && count > 0 {
 		return true
 	} else {
+		logs.Error("%s has not registe", app_address)
 		return false
 	}
 }
