@@ -2,674 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="699a1250-18c5-405c-a8b8-9a683e0882a7" name="Default" comment="提交代码">
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft/sso/doc/go_conf_parse.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/conf/local.conf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/conf/yun.conf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/controllers/blog.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/controllers/catalog.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/initial/db.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/initial/log.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/models/blog.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/models/catalog.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/models/models.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/AmazeUI-2.7.2/admin-404.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/AmazeUI-2.7.2/admin-form.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/AmazeUI-2.7.2/admin-gallery.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/AmazeUI-2.7.2/admin-help.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/AmazeUI-2.7.2/admin-index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/AmazeUI-2.7.2/admin-log.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/AmazeUI-2.7.2/admin-table.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/AmazeUI-2.7.2/admin-user.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/AmazeUI-2.7.2/assets/css/admin.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/AmazeUI-2.7.2/assets/css/amazeui.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/AmazeUI-2.7.2/assets/css/amazeui.flat.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/AmazeUI-2.7.2/assets/css/amazeui.flat.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/AmazeUI-2.7.2/assets/css/amazeui.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/AmazeUI-2.7.2/assets/css/app.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/AmazeUI-2.7.2/assets/fonts/FontAwesome.otf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/AmazeUI-2.7.2/assets/fonts/fontawesome-webfont.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/AmazeUI-2.7.2/assets/fonts/fontawesome-webfont.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/AmazeUI-2.7.2/assets/fonts/fontawesome-webfont.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/AmazeUI-2.7.2/assets/fonts/fontawesome-webfont.woff2" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/AmazeUI-2.7.2/assets/i/app-icon72x72@2x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/AmazeUI-2.7.2/assets/i/examples/admin-chrome.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/AmazeUI-2.7.2/assets/i/examples/admin-firefox.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/AmazeUI-2.7.2/assets/i/examples/admin-ie.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/AmazeUI-2.7.2/assets/i/examples/admin-opera.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/AmazeUI-2.7.2/assets/i/examples/admin-safari.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/AmazeUI-2.7.2/assets/i/examples/adminPage.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/AmazeUI-2.7.2/assets/i/examples/blogPage.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/AmazeUI-2.7.2/assets/i/examples/landing.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/AmazeUI-2.7.2/assets/i/examples/landingPage.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/AmazeUI-2.7.2/assets/i/examples/loginPage.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/AmazeUI-2.7.2/assets/i/examples/sidebarPage.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/AmazeUI-2.7.2/assets/i/favicon.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/AmazeUI-2.7.2/assets/i/startup-640x1096.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/AmazeUI-2.7.2/assets/js/amazeui.ie8polyfill.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/AmazeUI-2.7.2/assets/js/amazeui.ie8polyfill.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/AmazeUI-2.7.2/assets/js/amazeui.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/AmazeUI-2.7.2/assets/js/amazeui.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/AmazeUI-2.7.2/assets/js/amazeui.widgets.helper.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/AmazeUI-2.7.2/assets/js/amazeui.widgets.helper.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/AmazeUI-2.7.2/assets/js/app.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/AmazeUI-2.7.2/assets/js/handlebars.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/AmazeUI-2.7.2/blog.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/AmazeUI-2.7.2/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/AmazeUI-2.7.2/iscroll.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/AmazeUI-2.7.2/landing.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/AmazeUI-2.7.2/login.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/AmazeUI-2.7.2/non-responsive.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/AmazeUI-2.7.2/sidebar.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/AmazeUI-2.7.2/widget.basic.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/AmazeUI-2.7.2/widget.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/alert_info/css/bootstrap.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/alert_info/css/component.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/alert_info/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/alert_info/js/classie.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/alert_info/js/modalEffects.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/alert_info/说明.htm" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/alert_info/说明.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/bootstrap-3.3.7-dist/css/bootstrap-theme.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/bootstrap-3.3.7-dist/css/bootstrap-theme.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/bootstrap-3.3.7-dist/css/bootstrap.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/bootstrap-3.3.7-dist/css/bootstrap.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/bootstrap-3.3.7-dist/css/bootstrap.min.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.woff2" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/bootstrap-3.3.7-dist/js/bootstrap.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/bootstrap-3.3.7-dist/js/bootstrap.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/bootstrap-3.3.7-dist/js/npm.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/CHANGES.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/LICENSE.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/adapters/jquery.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/ckeditor.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/config.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/contents.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/contents_adjust.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/_translationstatus.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/af.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/ar.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/az.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/bg.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/bn.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/bs.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/ca.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/cs.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/cy.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/da.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/de-ch.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/de.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/el.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/en-au.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/en-ca.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/en-gb.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/en.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/eo.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/es-mx.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/es.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/et.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/eu.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/fa.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/fi.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/fo.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/fr-ca.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/fr.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/gl.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/gu.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/he.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/hi.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/hr.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/hu.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/id.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/is.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/it.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/ja.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/ka.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/km.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/ko.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/ku.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/lt.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/lv.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/mk.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/mn.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/ms.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/nb.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/nl.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/no.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/oc.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/pl.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/pt-br.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/pt.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/ro.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/ru.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/si.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/sk.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/sl.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/sq.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/sr-latn.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/sr.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/sv.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/th.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/tr.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/tt.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/ug.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/uk.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/vi.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/zh-cn.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/lang/zh.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/a11yhelp.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/_translationstatus.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/af.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/ar.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/az.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/bg.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/ca.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/cs.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/cy.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/da.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/de-ch.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/de.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/el.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/en-au.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/en-gb.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/en.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/eo.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/es-mx.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/es.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/et.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/eu.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/fa.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/fi.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/fo.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/fr-ca.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/fr.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/gl.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/gu.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/he.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/hi.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/hr.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/hu.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/id.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/it.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/ja.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/km.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/ko.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/ku.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/lt.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/lv.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/mk.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/mn.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/nb.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/nl.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/no.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/oc.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/pl.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/pt-br.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/pt.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/ro.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/ru.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/si.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/sk.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/sl.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/sq.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/sr-latn.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/sr.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/sv.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/th.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/tr.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/tt.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/ug.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/uk.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/vi.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/zh-cn.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/a11yhelp/dialogs/lang/zh.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/about/dialogs/about.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/about/dialogs/hidpi/logo_ckeditor.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/about/dialogs/logo_ckeditor.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/clipboard/dialogs/paste.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/dialog/dialogDefinition.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/icons.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/icons_hidpi.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/image/dialogs/image.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/image/images/noimage.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/link/dialogs/anchor.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/link/dialogs/link.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/link/images/anchor.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/link/images/hidpi/anchor.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/magicline/images/hidpi/icon-rtl.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/magicline/images/hidpi/icon.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/magicline/images/icon-rtl.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/magicline/images/icon.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/pastefromword/filter/default.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/scayt/CHANGELOG.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/scayt/LICENSE.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/scayt/dialogs/dialog.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/scayt/dialogs/options.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/scayt/dialogs/toolbar.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/af.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/ar.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/az.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/bg.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/ca.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/cs.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/cy.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/da.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/de-ch.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/de.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/el.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/en-au.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/en-ca.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/en-gb.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/en.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/eo.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/es-mx.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/es.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/et.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/eu.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/fa.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/fi.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/fr-ca.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/fr.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/gl.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/he.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/hr.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/hu.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/id.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/it.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/ja.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/km.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/ko.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/ku.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/lt.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/lv.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/nb.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/nl.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/no.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/oc.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/pl.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/pt-br.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/pt.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/ro.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/ru.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/si.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/sk.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/sl.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/sq.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/sv.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/th.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/tr.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/tt.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/ug.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/uk.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/vi.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/zh-cn.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/lang/zh.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/specialchar/dialogs/specialchar.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/table/dialogs/table.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/tableselection/styles/tableselection.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/tabletools/dialogs/tableCell.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/widget/images/handle.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/wsc/LICENSE.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/wsc/dialogs/ciframe.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/wsc/dialogs/wsc.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/wsc/dialogs/wsc.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/wsc/dialogs/wsc_ie.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/css/samples.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/img/github-top.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/img/header-bg.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/img/header-separator.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/img/logo.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/img/logo.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/img/navigation-tip.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/js/sample.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/js/sf.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/old/ajax.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/old/api.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/old/appendto.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/old/assets/inlineall/logo.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/old/assets/outputxhtml/outputxhtml.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/old/assets/posteddata.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/old/assets/sample.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/old/assets/uilanguages/languages.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/old/datafiltering.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/old/dialog/assets/my_dialog.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/old/dialog/dialog.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/old/divreplace.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/old/enterkey/enterkey.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/old/htmlwriter/assets/outputforflash/outputforflash.fla" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/old/htmlwriter/assets/outputforflash/outputforflash.swf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/old/htmlwriter/assets/outputforflash/swfobject.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/old/htmlwriter/outputforflash.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/old/htmlwriter/outputhtml.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/old/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/old/inlineall.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/old/inlinebycode.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/old/inlinetextarea.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/old/jquery.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/old/magicline/magicline.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/old/readonly.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/old/replacebyclass.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/old/replacebycode.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/old/sample.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/old/sample.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/old/sample_posteddata.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/old/tabindex.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/old/toolbar/toolbar.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/old/uicolor.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/old/uilanguages.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/old/wysiwygarea/fullpage.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/old/xhtmlstyle.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/toolbarconfigurator/css/fontello.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/toolbarconfigurator/font/LICENSE.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/toolbarconfigurator/font/config.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/toolbarconfigurator/font/fontello.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/toolbarconfigurator/font/fontello.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/toolbarconfigurator/font/fontello.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/toolbarconfigurator/font/fontello.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/toolbarconfigurator/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/toolbarconfigurator/js/abstracttoolbarmodifier.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/toolbarconfigurator/js/fulltoolbareditor.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/toolbarconfigurator/js/toolbarmodifier.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/toolbarconfigurator/js/toolbartextmodifier.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/toolbarconfigurator/lib/codemirror/LICENSE" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/toolbarconfigurator/lib/codemirror/codemirror.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/toolbarconfigurator/lib/codemirror/codemirror.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/toolbarconfigurator/lib/codemirror/javascript.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/toolbarconfigurator/lib/codemirror/neo.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/toolbarconfigurator/lib/codemirror/show-hint.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/samples/toolbarconfigurator/lib/codemirror/show-hint.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/skins/moono-lisa/dialog.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/skins/moono-lisa/dialog_ie.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/skins/moono-lisa/dialog_ie8.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/skins/moono-lisa/dialog_iequirks.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/skins/moono-lisa/editor.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/skins/moono-lisa/editor_gecko.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/skins/moono-lisa/editor_ie.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/skins/moono-lisa/editor_ie8.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/skins/moono-lisa/editor_iequirks.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/skins/moono-lisa/icons.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/skins/moono-lisa/icons_hidpi.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/skins/moono-lisa/images/arrow.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/skins/moono-lisa/images/close.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/skins/moono-lisa/images/hidpi/close.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/skins/moono-lisa/images/hidpi/lock-open.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/skins/moono-lisa/images/hidpi/lock.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/skins/moono-lisa/images/hidpi/refresh.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/skins/moono-lisa/images/lock-open.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/skins/moono-lisa/images/lock.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/skins/moono-lisa/images/refresh.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/skins/moono-lisa/images/spinner.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/skins/moono-lisa/readme.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ckeditor/styles.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/flowchart/images/ztb_active-6.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/flowchart/images/ztb_active.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/flowchart/images/ztb_down.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/flowchart/images/ztb_gx.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/flowchart/images/ztb_gx1.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/flowchart/images/ztb_gx2.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/flowchart/images/ztb_lc.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/flowchart/images/ztb_sel.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/flowchart/images/ztb_up.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/flowchart/js/jquery-1.9.1.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/flowchart/styles/css.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ilearning_form/css/style.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ilearning_form/images/pwdstrength.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ilearning_form/images/yellow_button.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ilearning_form/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ilearning_form/js/Validate.form.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ilearning_form/js/Validate.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ilearning_form/js/jquery.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ilearning_form/说明.htm" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/ilearning_form/说明.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/imgscanner/css/htmleaf-demo.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/imgscanner/css/normalize.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/imgscanner/css/reset.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/imgscanner/css/style.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/imgscanner/dist/easySlider.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/imgscanner/dist/easySlider.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/imgscanner/dist/jquery.boilerplate.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/imgscanner/dist/jquery.boilerplate.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/imgscanner/img/1.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/imgscanner/img/2.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/imgscanner/img/3.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/imgscanner/img/4.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/imgscanner/img/next.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/imgscanner/img/prev.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/imgscanner/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/imgscanner/js/jquery-2.1.1.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/imgscanner/说明.htm" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/jquery-1.11.3.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/jquery-1.12.4.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/jquery_popover/.gitignore" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/jquery_popover/.jshintrc" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/jquery_popover/.npmignore" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/jquery_popover/CONTRIBUTING.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/jquery_popover/Gruntfile.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/jquery_popover/HISTORY.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/jquery_popover/LICENSE.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/jquery_popover/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/jquery_popover/ROADMAP.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/jquery_popover/bower.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/jquery_popover/demo/async-content-another.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/jquery_popover/demo/async-content.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/jquery_popover/demo/bootstrap.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/jquery_popover/demo/bootstrap.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/jquery_popover/demo/demo.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/jquery_popover/demo/index-dev.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/jquery_popover/demo/index-old.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/jquery_popover/demo/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/jquery_popover/demo/jquery.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/jquery_popover/demo/mobile.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/jquery_popover/demo/table-data.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/jquery_popover/demo/test-auto-bottom.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/jquery_popover/demo/test-body-height.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/jquery_popover/demo/test-cache.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/jquery_popover/demo/test-canvas.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/jquery_popover/demo/test-container-scroll-fix.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/jquery_popover/demo/test-container-scroll.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/jquery_popover/demo/test-container.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/jquery_popover/demo/test-global-api.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/jquery_popover/demo/test-issue193.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/jquery_popover/demo/test-issue195.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/jquery_popover/demo/test-issue197.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/jquery_popover/demo/test-issue214.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/jquery_popover/demo/test-manual-show-bug.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/jquery_popover/demo/test-svg.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/jquery_popover/demo/test-wenzhixin-bstable.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/jquery_popover/demo/test.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/jquery_popover/demo/text.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/jquery_popover/dist/jquery.webui-popover.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/jquery_popover/dist/jquery.webui-popover.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/jquery_popover/dist/jquery.webui-popover.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/jquery_popover/dist/jquery.webui-popover.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/jquery_popover/fonts/glyphicons-halflings-regular.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/jquery_popover/fonts/glyphicons-halflings-regular.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/jquery_popover/fonts/glyphicons-halflings-regular.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/jquery_popover/fonts/glyphicons-halflings-regular.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/jquery_popover/img/loading.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/jquery_popover/package.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/jquery_popover/src/jquery.webui-popover.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/jquery_popover/src/jquery.webui-popover.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/jquery_popover/src/jquery.webui-popover.less" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/jquery_popover/webui-popover.jquery.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/jsrender.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/leftnav/css/font-awesome.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/leftnav/css/leftnav.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/leftnav/fonts/fontawesome-webfont.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/leftnav/fonts/fontawesome-webfont.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/leftnav/fonts/fontawesome-webfont.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/leftnav/fonts/fontawesome-webfont.woff2" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/leftnav/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/leftnav/js/jquery.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/leftnav/js/leftnav.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/leftnav/说明.htm" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/leftnav/说明.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/paginator/css/paging.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/paginator/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/paginator/js/jquery-1.11.2.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/paginator/js/paging.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/paginator/js/query.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/paginator/说明.htm" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/paginator/说明.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/.gitignore" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/.travis.yml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/LICENSE" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/bower.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/changelog.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/composer.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/demo/favicon.ico" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/demo/fonts/wbotelhos.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/demo/fonts/wbotelhos.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/demo/fonts/wbotelhos.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/demo/fonts/wbotelhos.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/demo/images/0.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/demo/images/1.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/demo/images/2.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/demo/images/3.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/demo/images/4.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/demo/images/5.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/demo/images/cancel-custom-off.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/demo/images/cancel-custom-on.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/demo/images/cancel-off.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/demo/images/cancel-on.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/demo/images/off.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/demo/images/on.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/demo/images/star-half-mono.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/demo/images/star-half.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/demo/images/star-off.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/demo/images/star-on.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/demo/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/demo/javascripts/labs.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/demo/stylesheets/labs.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/lib/fonts/raty.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/lib/fonts/raty.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/lib/fonts/raty.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/lib/fonts/raty.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/lib/images/cancel-off.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/lib/images/cancel-on.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/lib/images/star-half.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/lib/images/star-off.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/lib/images/star-on.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/lib/jquery.raty.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/lib/jquery.raty.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/package-lock.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/package.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/spec/cancel_class_spec.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/spec/cancel_hint_spec.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/spec/cancel_off_spec.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/spec/cancel_on_spec.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/spec/cancel_place_spec.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/spec/cancel_spec.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/spec/click_spec.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/spec/common_spec.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/spec/fn_cancel_spec.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/spec/fn_move_spec.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/spec/fn_readonly_spec.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/spec/fn_set_score_spec.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/spec/fn_set_spec.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/spec/get_first_decimal_spec.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/spec/half_spec.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/spec/hints_spec.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/spec/karma.conf.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/spec/lib/boot.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/spec/lib/helper.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/spec/lib/jasmine-html.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/spec/lib/jasmine-jquery.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/spec/lib/jasmine.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/spec/lib/jasmine.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/spec/mouseout_spec.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/spec/mouseover_spec.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/spec/number_max_spec.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/spec/number_spec.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/spec/options_spec.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/spec/path_spec.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/spec/precision_spec.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/spec/readonly_spec.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/spec/run.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/spec/score_name_spec.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/spec/score_spec.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/spec/spec.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/spec/star_off_spec.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/spec/star_on_spec.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/spec/star_type_spec.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/spec/stars_spec.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/spec/target_spec.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/spec/target_type_spec.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/raty-2.8.0/vendor/jquery.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/rightmenu/fonts/icomoon.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/rightmenu/fonts/icomoon.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/rightmenu/fonts/icomoon.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/rightmenu/fonts/icomoon.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/rightmenu/images/02index-2.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/rightmenu/images/02index-banner-8.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/rightmenu/images/arrow.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/rightmenu/images/q1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/rightmenu/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/rightmenu/js/jquery-1.4.2.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/rightmenu/说明.htm" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/rightmenu/说明.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/tabfolder/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/tabfolder/js/jquery-1.7.2.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/tabfolder/js/tab.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/tabfolder/style/common.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/tabfolder/style/style.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/tabfolder/说明.htm" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/tabfolder/说明.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/toggle_message/css/style.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/toggle_message/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/toggle_message/js/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/toggle_message/js/jquery.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/toggle_message/说明.htm" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/toggle_message/说明.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/common/vue.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/css/header.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/css/initial.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/css/layout.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/img/social/github.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/js/blog/blog_add.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/js/blog/blog_list.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/js/catalog/catalog_add.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/js/catalog/catalog_list.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/static/js/header.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/views/blog/blog_add.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/views/blog/blog_list.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/views/catalog/catalog_add.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/views/catalog/catalog_list.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/views/common/footer.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/views/common/friend.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/views/common/header.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft_blog_web/views/layout/layout_base.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../isoft/common/fileutil.go" />
       <change beforePath="$PROJECT_DIR$/../github.com/ulricqin/beego-blog" afterPath="$PROJECT_DIR$/../github.com/ulricqin/beego-blog" />
-      <change beforePath="$PROJECT_DIR$/../isoft_learning_web/controllers/common.go" afterPath="$PROJECT_DIR$/../isoft_learning_web/controllers/common.go" />
-      <change beforePath="$PROJECT_DIR$/../isoft_learning_web/controllers/course.go" afterPath="$PROJECT_DIR$/../isoft_learning_web/controllers/course.go" />
-      <change beforePath="$PROJECT_DIR$/../isoft_learning_web/ilearning/filter/filter.go" afterPath="$PROJECT_DIR$/../isoft/sso/jwt_filter.go" />
-      <change beforePath="$PROJECT_DIR$/../isoft_learning_web/ilearning/util/page.go" afterPath="$PROJECT_DIR$/../isoft/common/page.go" />
-      <change beforePath="$PROJECT_DIR$/../isoft_learning_web/main.go" afterPath="$PROJECT_DIR$/../isoft_learning_web/main.go" />
-      <change beforePath="$PROJECT_DIR$/../isoft_sso_tools/.idea/isoft_sso_tools.iml" afterPath="$PROJECT_DIR$/../isoft/.idea/isoft_sso_tools.iml" />
-      <change beforePath="$PROJECT_DIR$/../isoft_sso_tools/.idea/modules.xml" afterPath="$PROJECT_DIR$/../isoft/.idea/modules.xml" />
-      <change beforePath="$PROJECT_DIR$/../isoft_sso_tools/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../isoft/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../isoft_sso_tools/doc/go_test.txt" afterPath="$PROJECT_DIR$/../isoft/sso/doc/go_test.txt" />
-      <change beforePath="$PROJECT_DIR$/../isoft_sso_tools/doc/jwt.txt" afterPath="$PROJECT_DIR$/../isoft/sso/doc/jwt.txt" />
-      <change beforePath="$PROJECT_DIR$/../isoft_sso_tools/jwt.go" afterPath="$PROJECT_DIR$/../isoft/sso/jwt.go" />
-      <change beforePath="$PROJECT_DIR$/../isoft_sso_tools/jwt_test.go" afterPath="$PROJECT_DIR$/../isoft/sso/jwt_test.go" />
-      <change beforePath="$PROJECT_DIR$/.idea/isoft_sso_web.iml" afterPath="$PROJECT_DIR$/.idea/isoft_sso_web.iml" />
+      <change beforePath="$PROJECT_DIR$/../isoft/sso/doc/go_conf_parse.txt" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/conf/app.conf" afterPath="$PROJECT_DIR$/conf/app.conf" />
+      <change beforePath="$PROJECT_DIR$/conf/local.conf" afterPath="$PROJECT_DIR$/conf/local.conf" />
+      <change beforePath="$PROJECT_DIR$/conf/yun.conf" afterPath="$PROJECT_DIR$/conf/yun.conf" />
+      <change beforePath="$PROJECT_DIR$/controllers/default.go" afterPath="" />
       <change beforePath="$PROJECT_DIR$/controllers/user.go" afterPath="$PROJECT_DIR$/controllers/user.go" />
-      <change beforePath="$PROJECT_DIR$/main.go" afterPath="$PROJECT_DIR$/main.go" />
-      <change beforePath="$PROJECT_DIR$/models/appregister.go" afterPath="$PROJECT_DIR$/models/appregister.go" />
+      <change beforePath="$PROJECT_DIR$/routers/router.go" afterPath="$PROJECT_DIR$/routers/router.go" />
+      <change beforePath="$PROJECT_DIR$/views/index.tpl" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -692,78 +35,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="models.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../isoft_blog_web/models/models.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="23" column="107" lean-forward="false" selection-start-line="23" selection-start-column="98" selection-end-line="23" selection-end-column="107" />
-              <folding>
-                <element signature="e#16#29#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="blog.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../isoft_blog_web/models/blog.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="10" column="73" lean-forward="false" selection-start-line="10" selection-start-column="73" selection-end-line="10" selection-end-column="73" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="blog.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../isoft_blog_web/controllers/blog.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="29" column="43" lean-forward="false" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="blog_add.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../isoft_blog_web/static/js/blog/blog_add.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="14" column="31" lean-forward="false" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="blog_add.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../isoft_blog_web/views/blog/blog_add.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="1" column="40" lean-forward="false" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="local.conf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/conf/local.conf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="yun.conf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/conf/yun.conf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="app.conf" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../isoft_blog_web/conf/app.conf">
           <provider selected="true" editor-type-id="text-editor">
@@ -774,21 +45,99 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="local.conf" pinned="false" current-in-tab="true">
+      <file leaf-file-name="local.conf" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../isoft_blog_web/conf/local.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="12" column="37" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="37" />
+            <state relative-caret-position="192">
+              <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="yun.conf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../isoft_blog_web/conf/yun.conf">
+      <file leaf-file-name="jwt.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../isoft/sso/jwt.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding>
+                <element signature="e#13#62#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jwt_filter.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../isoft/sso/jwt_filter.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+              <folding>
+                <element signature="e#13#191#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loginrecord.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/loginrecord.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.go" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/controllers/user.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="521">
+              <caret line="231" column="0" lean-forward="false" selection-start-line="231" selection-start-column="0" selection-end-line="231" selection-end-column="0" />
+              <folding>
+                <element signature="e#21#165#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="local.conf" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conf/local.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.conf" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conf/app.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="12" column="40" lean-forward="false" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="router.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routers/router.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="8" column="25" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+              <folding>
+                <element signature="e#17#84#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="yun.conf" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conf/yun.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -806,7 +155,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>course/courselist</find>
       <find>CourseList</find>
       <find>md-trigger</find>
       <find>pageTool</find>
@@ -836,6 +184,7 @@
       <find>style=&quot;border-top: 1px solid #eee;border-bottom: 1px solid #eee;&quot;</find>
       <find>btn-sm</find>
       <find>&lt;div class=&quot;col-sm-3&quot;&gt;</find>
+      <find>originConfig</find>
     </findStrings>
     <replaceStrings>
       <replace>LoginRecord</replace>
@@ -857,14 +206,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../github.com/ulricqin/beego-blog/g/g.go" />
-        <option value="$PROJECT_DIR$/../isoft_blog_web/init/log.go" />
-        <option value="$PROJECT_DIR$/../isoft_blog_web/init/db.go" />
-        <option value="$PROJECT_DIR$/../isoft_blog_web/initial/db.go" />
-        <option value="$PROJECT_DIR$/../isoft_blog_web/conf/app.conf" />
-        <option value="$PROJECT_DIR$/../isoft_blog_web/controllers/CatalogController.go" />
-        <option value="$PROJECT_DIR$/../isoft_blog_web/views/catalog.html" />
-        <option value="$PROJECT_DIR$/../isoft_blog_web/conf/local.conf" />
         <option value="$PROJECT_DIR$/../isoft_blog_web/conf/yun.conf" />
         <option value="$PROJECT_DIR$/../isoft_static_web/routers/router.go" />
         <option value="$PROJECT_DIR$/../isoft_static_web/conf/local.conf" />
@@ -883,7 +224,6 @@
         <option value="$PROJECT_DIR$/../isoft/common/pagetool.go" />
         <option value="$PROJECT_DIR$/../isoft/common/page.go" />
         <option value="$PROJECT_DIR$/../isoft_learning_web/controllers/course.go" />
-        <option value="$PROJECT_DIR$/controllers/user.go" />
         <option value="$PROJECT_DIR$/../isoft_learning_web/main.go" />
         <option value="$PROJECT_DIR$/../isoft_learning_web/controllers/common.go" />
         <option value="$PROJECT_DIR$/../github.com/ulricqin/beego-blog/main.go" />
@@ -908,6 +248,15 @@
         <option value="$PROJECT_DIR$/../isoft_blog_web/controllers/catalog.go" />
         <option value="$PROJECT_DIR$/../isoft_blog_web/views/blog/blog_list.html" />
         <option value="$PROJECT_DIR$/../isoft_blog_web/static/js/blog/blog_add.js" />
+        <option value="$PROJECT_DIR$/../isoft/sso/filepath.go" />
+        <option value="$PROJECT_DIR$/../isoft/common/fileutil.go" />
+        <option value="$PROJECT_DIR$/../isoft/sso/configpath.go" />
+        <option value="$PROJECT_DIR$/../isoft/sso/configpath_test.go" />
+        <option value="$PROJECT_DIR$/conf/local.conf" />
+        <option value="$PROJECT_DIR$/conf/yun.conf" />
+        <option value="$PROJECT_DIR$/routers/router.go" />
+        <option value="$PROJECT_DIR$/conf/app.conf" />
+        <option value="$PROJECT_DIR$/controllers/user.go" />
       </list>
     </option>
   </component>
@@ -952,6 +301,35 @@
             <path>
               <item name="isoft_sso_web" type="b2602c69:ProjectViewProjectNode" />
               <item name="isoft_sso_web" type="47feb1d3:ProjectViewModuleNode" />
+            </path>
+            <path>
+              <item name="isoft_sso_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="isoft_sso_web" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="isoft_sso_web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="isoft_sso_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="isoft_sso_web" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="isoft_sso_web" type="462c0819:PsiDirectoryNode" />
+              <item name="conf" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="isoft_sso_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="isoft_sso_web" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="isoft_sso_web" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="isoft_sso_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="isoft_sso_web" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="isoft_sso_web" type="462c0819:PsiDirectoryNode" />
+              <item name="routers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="isoft_sso_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="isoft_sso_web" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="isoft_sso_web" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -1000,7 +378,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.isoft_blog_web_run">
+  <component name="RunManager" selected="Go Build.isoft_sso_web_run">
     <configuration name="beego-blog_run" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="isoft_sso_web" />
       <working_directory value="D:\zhourui\program\go\goland_workspace\src\github.com\ulricqin\beego-blog" />
@@ -1041,6 +419,15 @@
       <kind value="DIRECTORY" />
       <package value="Isoft_sso" />
     </configuration>
+    <configuration name="configpath_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true">
+      <module name="isoft_sso_web" />
+      <working_directory value="$PROJECT_DIR$/../isoft/sso" />
+      <go_parameters value="-i" />
+      <framework value="gotest" />
+      <kind value="FILE" />
+      <package value="Isoft_sso" />
+      <filePath value="$PROJECT_DIR$/../isoft/sso/configpath_test.go" />
+    </configuration>
     <configuration default="true" type="js.build_tools.grunt" factoryName="Grunt.js">
       <node-interpreter value="project" />
       <envs />
@@ -1053,23 +440,23 @@
       <arguments />
       <envs />
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Go Build.isoft_sso_web_run" />
       <item index="1" class="java.lang.String" itemvalue="Go Build.isoft_blog_web_run" />
       <item index="2" class="java.lang.String" itemvalue="Go Build.beego-blog_run" />
       <item index="3" class="java.lang.String" itemvalue="Go Build.isoft_learning_web_run" />
+      <item index="4" class="java.lang.String" itemvalue="Go Test.configpath_test.go" />
     </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Go Test.configpath_test.go" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
   <component name="TestHistory">
-    <history-entry file="Test_CreateJWT_in_jwt_test_go - 2018.04.19 at 00h 01m 29s.xml">
-      <configuration name="Test_CreateJWT in jwt_test.go" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="Test_ParseJWT_in_jwt_test_go - 2018.04.18 at 23h 56m 57s.xml">
-      <configuration name="Test_ParseJWT in jwt_test.go" configurationId="GoTestRunConfiguration" />
-    </history-entry>
     <history-entry file="Test_ParseJWT_in_jwt_test_go - 2018.04.19 at 00h 01m 37s.xml">
       <configuration name="Test_ParseJWT in jwt_test.go" configurationId="GoTestRunConfiguration" />
     </history-entry>
@@ -1094,6 +481,12 @@
     <history-entry file="Test_ValidateAndParseJWT_in_jwt_test_go - 2018.04.19 at 00h 13m 41s.xml">
       <configuration name="Test_ValidateAndParseJWT in jwt_test.go" configurationId="GoTestRunConfiguration" />
     </history-entry>
+    <history-entry file="configpath_test_go - 2018.05.05 at 21h 14m 05s.xml">
+      <configuration name="configpath_test.go" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="configpath_test_go - 2018.05.05 at 21h 16m 50s.xml">
+      <configuration name="configpath_test.go" configurationId="GoTestRunConfiguration" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1106,8 +499,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32667387" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32667387" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289941" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.61301774" sideWeight="0.5151188" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991362" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -1133,9 +527,9 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.61301774" sideWeight="0.5151188" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.61301774" sideWeight="0.48488122" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4224852" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4224852" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5727811" sideWeight="0.49784017" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3212743" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32667387" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991362" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6816568" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1195,139 +589,15 @@
           <line>169</line>
           <option name="timeStamp" value="103" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/controllers/user.go</url>
-          <line>84</line>
-          <option name="timeStamp" value="108" />
-        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="121" />
+      <option name="time" value="122" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/js/user/regist.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/admin/appregister_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2568">
-          <caret line="107" column="33" lean-forward="false" selection-start-line="107" selection-start-column="33" selection-end-line="107" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../isoft_learning_web/ilearning/util/aesutil.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-751">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../isoft_learning_web/ilearning/util/path.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../isoft_learning_web/controllers/comment.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../isoft_learning_web/views/course_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../isoft_learning_web/views/course_play.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../isoft_learning_web/views/imgscanner.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../isoft_learning_web/views/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../isoft_learning_web/views/search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../isoft_blog_web/views/common/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../isoft_blog_web/views/common/friend.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../isoft_learning_web/views/advertisement.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="15" column="54" lean-forward="true" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../isoft_blog_web/static/common/paginator/js/query.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="186" column="31" lean-forward="true" selection-start-line="186" selection-start-column="31" selection-end-line="186" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../isoft_blog_web/views/common/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="27" lean-forward="false" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../isoft_blog_web/static/js/header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../isoft_learning_web/views/course/course_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../isoft_blog_web/controllers/management.go" />
     <entry file="file://$PROJECT_DIR$/../isoft_blog_web/views/catalog/catalog_add.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -1410,6 +680,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
           <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="33" selection-end-column="1" />
+          <folding>
+            <element signature="e#16#58#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1417,6 +690,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1424,6 +698,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1431,6 +706,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="9" column="23" lean-forward="false" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1445,6 +721,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="20" column="50" lean-forward="true" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#1;n#li#0;n#ul#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#2;n#li#0;n#ul#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#3;n#li#0;n#ul#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1466,6 +751,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="415">
           <caret line="30" column="42" lean-forward="false" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="42" />
+          <folding>
+            <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1473,6 +761,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="23" column="45" lean-forward="false" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1494,9 +783,9 @@
     <entry file="file://$PROJECT_DIR$/../isoft_blog_web/models/models.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="552">
-          <caret line="23" column="107" lean-forward="false" selection-start-line="23" selection-start-column="98" selection-end-line="23" selection-end-column="107" />
+          <caret line="23" column="86" lean-forward="false" selection-start-line="23" selection-start-column="86" selection-end-line="23" selection-end-column="86" />
           <folding>
-            <element signature="e#16#29#0" expanded="true" />
+            <element signature="e#16#29#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1511,7 +800,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../isoft_blog_web/controllers/blog.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
+        <state relative-caret-position="672">
           <caret line="29" column="43" lean-forward="false" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
           <folding />
         </state>
@@ -1519,7 +808,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../isoft_blog_web/static/js/blog/blog_add.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
+        <state relative-caret-position="0">
           <caret line="14" column="31" lean-forward="false" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
           <folding />
         </state>
@@ -1533,7 +822,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conf/local.conf">
+    <entry file="file://$PROJECT_DIR$/../isoft/sso/doc/go_conf_parse.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1541,10 +830,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conf/yun.conf">
+    <entry file="file://$PROJECT_DIR$/../isoft/sso/doc/jwt.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../isoft/common/fileutil.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <folding>
+            <element signature="e#16#27#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../isoft_blog_web/conf/yun.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../../soft/install/go/go/src/archive/tar/example_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1111">
+          <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+          <folding>
+            <element signature="e#178#238#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../../soft/install/go/go/src/archive/tar/reader_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../../soft/install/go/go/src/archive/tar/strconv_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../isoft/sso/doc/go_test.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../isoft/sso/configpath.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="50" lean-forward="false" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../isoft/sso/configpath_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="36" lean-forward="false" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../isoft/sso/jwt_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -1557,7 +922,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../isoft_blog_web/conf/yun.conf">
+    <entry file="file://$PROJECT_DIR$/../isoft_blog_web/conf/local.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../isoft/sso/jwt.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="e#13#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../isoft/sso/jwt_filter.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="e#13#191#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/loginrecord.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1565,11 +958,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../isoft_blog_web/conf/local.conf">
+    <entry file="file://$PROJECT_DIR$/conf/local.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/yun.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/default.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routers/router.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="25" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+          <folding>
+            <element signature="e#17#84#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/app.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
-          <caret line="12" column="37" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="37" />
+          <caret line="12" column="40" lean-forward="false" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/user.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="521">
+          <caret line="231" column="0" lean-forward="false" selection-start-line="231" selection-start-column="0" selection-end-line="231" selection-end-column="0" />
+          <folding>
+            <element signature="e#21#165#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

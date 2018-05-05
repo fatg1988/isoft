@@ -10,10 +10,10 @@ import (
 	"time"
 )
 
-var originConfig string
+var origin_list string
 
 func init() {
-	originConfig = beego.AppConfig.String("origin")
+	origin_list = beego.AppConfig.String("origin_list")
 }
 
 type UserController struct {
@@ -224,9 +224,13 @@ func CheckRegister(registUrl string) bool {
 	return models.CheckRegister(registUrl)
 }
 
+// 验证 origin 是否合法
 func CheckOrigin(origin string) bool {
-	if origin == originConfig {
-		return true
+	origin_slice := strings.Split(origin_list, ",")
+	for _, _origin := range origin_slice {
+		if origin == _origin {
+			return true
+		}
 	}
 	logs.Warn("origin error for %s", origin)
 	return false
