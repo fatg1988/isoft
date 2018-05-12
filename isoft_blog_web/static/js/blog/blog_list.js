@@ -24,7 +24,7 @@ $(function () {
         $.ajax({
             url:"/blog/list",
             type:"post",
-            data:{"current_page":current_page, "offset":offset},
+            data:{"current_page":current_page, "offset":offset, "personal":"personal"},
             success:function (obj) {
                 var data = JSON.parse(obj);
                 // 使用 $set 去修改这个 vueData 进行刷新页面
@@ -42,3 +42,36 @@ $(function () {
     }
 });
 
+function delete_blog(blog_id) {
+    if(window.confirm('确认要删除该博文吗?')){
+        $.ajax({
+            url:"/blog/delete",
+            type:"post",
+            data:{"blog_id":blog_id},
+            success:function (data) {
+                if(data.status == "SUCCESS"){
+                    window.location.reload();
+                }
+            }
+        });
+    }
+}
+
+function edit_blog(blog_id) {
+    window.location.href="/blog/edit?blog_id=" + blog_id;
+}
+
+function publish_blog(blog_id) {
+    if(window.confirm('确认要发布该博文吗?发布后所有人可见!')){
+        $.ajax({
+            url:"/blog/publish",
+            type:"post",
+            data:{"blog_id":blog_id},
+            success:function (data) {
+                if(data.status == "SUCCESS"){
+                    window.location.reload();
+                }
+            }
+        });
+    }
+}

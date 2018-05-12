@@ -1,0 +1,46 @@
+<script src="/static/common/ckeditor/ckeditor.js"></script>
+<script src="/static/js/blog/blog_edit.js"></script>
+
+<div id="blog_add" style="padding-left: 50px;">
+    <form role="form" method="post">
+        <input type="hidden" name="blog_id" value="{{.Blog.Id}}"/>
+        <div class="row form-group">
+            <div class="col-xs-6">
+                <input type="text" class="form-control" placeholder="博文标题" name="blog_title" value="{{.Blog.BlogTitle}}">
+            </div>
+            <div class="col-xs-6">
+                <input type="text" class="form-control" placeholder="搜索关键词" name="key_words" value="{{.Blog.KeyWords}}">
+            </div>
+        </div>
+        <div class="row form-group">
+            <div class="col-xs-4">
+                <select class="form-control" name="catalog_id">
+                    {{range $index, $elem := .Catalogs}}
+                        <option value="{{$elem.Id}}" selected="{{if $.Blog}}{{if eq $.Blog.Catalog.Id $elem.Id}}selected{{end}}{{end}}">{{$elem.CatalogName}}
+                        </option>
+                    {{end}}
+                </select>
+
+            </div>
+            <div class="col-xs-2">
+                <select class="form-control" name="blog_type">
+                    <option value="0" selected="{{if $.Blog}}{{if eq .Blog.BlogType 0}}selected{{end}}{{end}}">原创</option>
+                    <option value="1" selected="{{if $.Blog}}{{if eq .Blog.BlogType 1}}selected{{end}}{{end}}">翻译</option>
+                    <option value="2" selected="{{if $.Blog}}{{if eq .Blog.BlogType 2}}selected{{end}}{{end}}">转载</option>
+                </select>
+
+            </div>
+            <div class="col-xs-2">
+                <select class="form-control" name="blog_status">
+                    <option value="1" selected="{{if $.Blog}}{{if eq .Blog.BlogStatus 1}}selected{{end}}{{end}}">立即发布</option>
+                    <option value="0" selected="{{if $.Blog}}{{if eq .Blog.BlogStatus 0}}selected{{end}}{{end}}">保存草稿</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="edit_blog();return false;">提交</button>
+        </div>
+
+        <div>
+            <textarea name="content" cols="20" rows="2" id="editor">{{.Blog.Content}}</textarea>
+        </div>
+    </form>
+</div>

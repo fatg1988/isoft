@@ -1,0 +1,57 @@
+<link rel="stylesheet" type="text/css" href="/static/common/paginator/css/paging.css">
+<script type="text/javascript" src="/static/common/paginator/js/query.js"></script>
+<script type="text/javascript" src="/static/common/paginator/js/paging.js"></script>
+<script type="text/javascript" src="/static/common/vue.min.js"></script>
+<script type="text/javascript" src="/static/js/blog/blog_search.js"></script>
+<link rel="stylesheet" type="text/css" href="/static/css/blog/blog_search.css">
+<script type="text/javascript" src="/static/js/catalog/search_catalog.js"></script>
+<style>
+    [v-cloak] {
+        display: none;
+    }
+</style>
+
+<div class="row" style="margin: 0 auto;">
+    <div class="col-lg-12">
+        <div class="input-group">
+            <input type="text" name="search_text" class="form-control" placeholder="博客分类/博文名称/搜索关键词/作者">
+            <span class="input-group-btn">
+                    <button class="btn btn-default" type="button" onclick="search_text()">Go!</button>
+                </span>
+        </div>
+    </div>
+</div>
+
+<div id="blog_search">
+    <div id="catalog_list" style="margin-top: 50px;">
+        <div style="border-bottom: 1px solid red;">热门博文分类<a href="/catalog/more" style="float: right;">更多>></a></div>
+        <div>
+            <ul v-cloak v-for="catalog in catalogs">
+                <li style="float: left;display: list-item;margin-right: 15px;">
+                    <a href="javascript:" :onclick="'search_catalog(' + catalog.id + ');'">[[ catalog.catalog_name ]]</a>
+                </li>
+            </ul>
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+
+    <div id="blog_list" style="margin-top: 50px;">
+        <div style="border-bottom: 1px solid red;">热门博文清单<a href="/catalog/more" style="float: right;">更多>></a></div>
+        <ul style="margin-top: 10px;border-top: solid 1px #d9d9d9;">
+            <li v-cloak v-for="blog in blogs" style="padding: 15px;border: solid 1px #d9d9d9;border-top: 0;background-color: #fff;color: #666666;">
+                <dl>
+                    <dt style="float: left;font-weight:400;">博文标题：</dt>
+                    <dd style="float: left;"><a :href="'/blog/detail?blog_id=' + blog.id">[[ blog.blog_title ]]</a></dd>
+                </dl>
+                <dl>
+                    <dt style="float: left;font-weight:400;width: 50px;">作者：</dt>
+                    <dd style="float: left;margin-right: 50px;">[[ blog.author ]]</dd>
+                    <dt style="float: left;font-weight:400;width: 70px;">浏览次数：</dt>
+                    <dd style="float: left;">[[ blog.views ]]</dd>
+                </dl>
+                <div style="clear: both;"></div>
+            </li>
+        </ul>
+        <div id="blog_pageTool"></div>
+    </div>
+</div>

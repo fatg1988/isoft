@@ -4,9 +4,9 @@ import (
 	"github.com/astaxie/beego/orm"
 )
 
-func SaveCatalog(catalog *Catalog) (int64, error) {
+func InsertOrUpdateCatalog(catalog *Catalog) (int64, error) {
 	o := orm.NewOrm()
-	id, err := o.Insert(catalog)
+	id, err := o.InsertOrUpdate(catalog)
 	return id, err
 }
 
@@ -30,5 +30,17 @@ func QueryCatalog(condArr map[string]string, page int, offset int) (catalogs []C
 
 	qs = qs.Limit(offset, (page-1)*offset)
 	qs.All(&catalogs)
+	return
+}
+
+func QueryCatalogById(catalog_id int64) (catalog Catalog, err error) {
+	o := orm.NewOrm()
+	err = o.QueryTable("catalog").Filter("id", catalog_id).One(&catalog)
+	return
+}
+
+func DeleteCatalogById(catalog_id int64) (err error) {
+	o := orm.NewOrm()
+	_, err = o.QueryTable("catalog").Filter("id", catalog_id).Delete()
 	return
 }

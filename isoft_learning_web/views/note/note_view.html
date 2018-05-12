@@ -46,21 +46,21 @@ $(function () {
 
 <script>
     // iframe 高度自适应
-    function setIframeHeight(iframe) {
+    function autosetIframeHeight(iframe) {
         if (iframe) {
             var iframeWin = iframe.contentWindow || iframe.contentDocument.parentWindow;
             if (iframeWin.document.body) {
                 iframe.height = iframeWin.document.documentElement.scrollHeight || iframeWin.document.body.scrollHeight;
             }
         }
-    };
+    }
 </script>
 
 <div style="width: 92%;margin: 0 auto;">
     <div style="float: left;width: 20%;padding: 20px;">
         <input name="personal" value="{{ .Personal }}" type="hidden"/>
         <span class="notpersonal" style="display: none;">
-            <a href="javascript:;" class="toggle_favorite"
+            <a href="javascript:" class="toggle_favorite"
                request_href="/common/toggle_favorite?favorite_id={{ .Note.Id }}&favorite_type=note_collect" style="color:green;">
                 <span class="glyphicon glyphicon-tasks" aria-hidden="true">
                 {{if .NoteCollect}}
@@ -76,7 +76,7 @@ $(function () {
     </div>
     <div style="float: left;width: 80%;">
         <iframe name="noteFrame" width="100%" src="/note/queryNoteHtmlById?note_id={{ .Note.Id }}"
-                frameborder="0" scrolling="no" onload="setIframeHeight(this)">
+                frameborder="0" scrolling="no" onload="autosetIframeHeight(this)">
         </iframe>
     </div>
 </div>

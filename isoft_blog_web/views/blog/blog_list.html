@@ -15,46 +15,53 @@
     <div id="blog_list" style="padding-left: 50px;">
         <ul v-cloak v-for="blog in blogs">
             <li style="border-bottom: 1px solid #eee;">
-                <div>
-                    <label style="font-weight: bold;font-size: 14px;">博文标题：</label>
-                    <span style="padding: 2px 4px;font-size: 90%;color: #c7254e;background-color: #f9f2f4;border-radius: 4px;">
-                        [[ blog.blog_title ]]
-                    </span>
-                </div>
-                <div>
-                    <label style="font-weight: bold;font-size: 14px;">搜索关键词：</label><span>[[ blog.key_words ]]</span>
-                </div>
-                <div>
-                    <label style="font-weight: bold;font-size: 14px;">作者：</label><span>[[ blog.author ]]</span>
-                </div>
-                <div>
-                    <label style="font-weight: bold;font-size: 14px;">博文类型：</label>
-                    <span v-if="blog.blog_type === 0">原创</span>
-                    <span v-if="blog.blog_type === 1">翻译</span>
-                    <span v-if="blog.blog_type === 2">转载</span>
-                </div>
-                <div>
-                    <label style="font-weight: bold;font-size: 14px;">博文状态：</label>
-                    <span v-if="blog.blog_status === 0">已发布</span>
-                    <span v-if="blog.blog_status === 1"><button type="button" class="btn btn-info btn-xs">立即发布</button></span>
-                </div>
-                <div>
-                    <label style="font-weight: bold;font-size: 14px;">浏览次数：</label><span>[[ blog.edits ]]</span>
-                </div>
-                <div>
-                    <label style="font-weight: bold;font-size: 14px;">编辑次数：</label><span>[[ blog.blog_status ]]</span>
-                </div>
-                <div>
-                    <label style="font-weight: bold;font-size: 14px;">创建时间：</label><span>[[ blog.created_time ]]</span>
-                </div>
-                <div>
-                    <label style="font-weight: bold;font-size: 14px;">修改时间：</label><span>[[ blog.last_updated_time ]]</span>
-                    <span>
-                        <button type="button" class="btn btn-primary btn-xs">编辑</button>
-                        <button type="button" class="btn btn-success btn-xs">修改</button>
-                        <button type="button" class="btn btn-info btn-xs">删除</button>
-                    </span>
-                </div>
+                <dl>
+                    <dt style="float: left;font-weight:400;">博文标题：</dt>
+                    <dd style="float: left;">[[ blog.blog_title ]]</dd>
+                </dl><br/>
+                <dl>
+                    <dt style="float: left;font-weight:400;">搜索关键词：</dt>
+                    <dd style="float: left;padding: 2px 4px;font-size: 90%;color: #00c10b;background-color: #f9f2f4;border-radius: 4px;">
+                        [[ blog.key_words ]]
+                    </dd>
+                </dl><br/>
+                <dl>
+                    <dt style="float: left;font-weight:400;">作者：</dt>
+                    <dd style="float: left;">[[ blog.author ]]</dd>
+                </dl><br/>
+                <dl>
+                    <dt style="float: left;font-weight:400;">博文类型：</dt>
+                    <dd style="float: left;" v-if="blog.blog_type === 0">原创</dd>
+                    <dd style="float: left;" v-if="blog.blog_type === 1">翻译</dd>
+                    <dd style="float: left;" v-if="blog.blog_type === 2">转载</dd>
+                </dl><br/>
+                <dl>
+                    <dt style="float: left;font-weight:400;">博文状态：</dt>
+                    <dd style="float: left;" v-if="blog.blog_status === 0">
+                        <button type="button" class="btn btn-info btn-xs" :onclick="'publish_blog(' + blog.id + ');'">立即发布</button>
+                    </dd>
+                    <dd style="float: left;" v-if="blog.blog_status === 1">已发布</dd>
+                </dl><br/>
+                <dl>
+                    <dt style="float: left;font-weight:400;">浏览次数：</dt>
+                    <dd style="float: left;">[[ blog.edits ]]</dd>
+                </dl><br/>
+                <dl>
+                    <dt style="float: left;font-weight:400;">编辑次数：</dt>
+                    <dd style="float: left;">[[ blog.blog_status ]]</dd>
+                </dl><br/>
+                <dl>
+                    <dt style="float: left;font-weight:400;">创建时间：</dt>
+                    <dd style="float: left;">[[ blog.created_time ]]</dd>
+                </dl><br/>
+                <dl>
+                    <dt style="float: left;font-weight:400;">修改时间：</dt>
+                    <dd style="float: left;">[[ blog.last_updated_time ]]</dd>
+                    <dd style="float: left;">
+                        <button type="button" class="btn btn-success btn-xs" :onclick="'edit_blog(' + blog.id + ');'">编辑</button>
+                        <button type="button" class="btn btn-info btn-xs" :onclick="'delete_blog(' + blog.id + ');'">删除</button>
+                    </dd>
+                </dl><br/>
             </li>
         </ul>
         <div id="catalog_pageTool"></div>

@@ -1,0 +1,15 @@
+<script>
+    // iframe 高度自适应
+    function autosetIframeHeight(iframe) {
+        if (iframe) {
+            var iframeWin = iframe.contentWindow || iframe.contentDocument.parentWindow;
+            if (iframeWin.document.body) {
+                iframe.height = iframeWin.document.documentElement.scrollHeight || iframeWin.document.body.scrollHeight;
+            }
+        }
+    }
+</script>
+
+<iframe width="100%" src="/blog/detail?detail=detail&blog_id={{ .BlogId }}"
+        frameborder="0" scrolling="no" onload="autosetIframeHeight(this)">
+</iframe>

@@ -3,27 +3,27 @@
 <script type="text/javascript" src="/static/common/paginator/js/paging.js"></script>
 
 <script type="text/javascript" src="/static/common/vue.min.js"></script>
-<script type="text/javascript" src="/static/js/catalog/catalog_add.js"></script>
+<script type="text/javascript" src="/static/js/catalog/catalog_edit.js"></script>
 <div>
     <div id="catalog_add">
         <form class="form-horizontal" role="form">
+            <input type="hidden" name="catalog_id" value="{{.Catalog.Id}}"/>
             <div class="form-group">
                 <label for="catalog_name" class="col-sm-2 control-label">分类名称：</label>
-
                 <div class="col-sm-3">
-                    <input class="form-control" id="catalog_name" name="catalog_name">
+                    <input class="form-control" id="catalog_name" name="catalog_name" value="{{.Catalog.CatalogName}}">
                 </div>
             </div>
             <div class="form-group">
                 <label for="catalog_desc" class="col-sm-2 control-label">分类简介：</label>
 
                 <div class="col-sm-10">
-                    <input class="form-control" id="catalog_desc" name="catalog_desc">
+                    <input class="form-control" id="catalog_desc" name="catalog_desc" value="{{.Catalog.CatalogDesc}}">
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-sm-offset-2 col-sm-10">
-                    <button class="btn btn-primary" onclick="addCatalog();return false;">新增</button>
+                    <button class="btn btn-primary" onclick="edit_catalog();return false;">新增</button>
                 </div>
             </div>
         </form>

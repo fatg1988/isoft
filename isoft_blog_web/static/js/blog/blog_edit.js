@@ -7,7 +7,8 @@ $(function () {
     });
 });
 
-function submitBlog() {
+function edit_blog() {
+    var blog_id = $("input[name='blog_id']").val();
     var blog_title = $("input[name='blog_title']").val();
     var key_words = $("input[name='key_words']").val();
     var catalog_id = $("select[name='catalog_id']").val();
@@ -16,10 +17,16 @@ function submitBlog() {
     var content = CKEDITOR.instances.editor.getData();
 
     $.ajax({
-        url:"/blog/add",
+        url:"/blog/edit",
         type:"post",
-        data:{"blog_title":blog_title, "key_words":key_words, "catalog_id":catalog_id,
-            "blog_type":blog_type,"blog_status":blog_status,"content":content},
+        data:function(){
+            if(blog_id == "" || blog_id == null || blog_id == undefined){
+                return {"blog_title":blog_title, "key_words":key_words, "catalog_id":catalog_id,
+                    "blog_type":blog_type,"blog_status":blog_status,"content":content};
+            }
+            return {"blog_id":blog_id,"blog_title":blog_title, "key_words":key_words, "catalog_id":catalog_id,
+                "blog_type":blog_type,"blog_status":blog_status,"content":content};
+        }(),
         success:function (data) {
             if(data.status=="SUCCESS"){
                 window.location.href="/blog/list";

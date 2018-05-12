@@ -22,7 +22,8 @@
                     </span>
                 </div>
                 <div>
-                    <label style="font-weight: bold;font-size: 14px;">分类描述：</label><span>[[ catalog.catalog_desc ]]</span>
+                    <label style="font-weight: bold;font-size: 14px;">分类描述：</label>
+                    <span style="padding: 2px 4px;font-size: 90%;color: #00c10b;background-color: #f9f2f4;border-radius: 4px;">[[ catalog.catalog_desc ]]</span>
                 </div>
                 <div>
                     <label style="font-weight: bold;font-size: 14px;">作者：</label><span>[[ catalog.author ]]</span>
@@ -30,9 +31,8 @@
                 <div>
                     <label style="font-weight: bold;font-size: 14px;">创建时间：</label><span>[[ catalog.created_time ]]</span>
                     <span>
-                        <button type="button" class="btn btn-primary btn-xs">编辑</button>
-                        <button type="button" class="btn btn-success btn-xs">修改</button>
-                        <button type="button" class="btn btn-info btn-xs">删除</button>
+                        <button type="button" class="btn btn-success btn-xs" :onclick="'edit_catalog(' + catalog.id + ');'">编辑</button>
+                        <button type="button" class="btn btn-info btn-xs" :onclick="'delete_catalog(' + catalog.id + ');'">删除</button>
                     </span>
                 </div>
             </li>
