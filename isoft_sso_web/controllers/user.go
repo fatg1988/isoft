@@ -30,10 +30,11 @@ func (this *UserController) CheckOrInValidateTokenString() {
 		if err == nil {
 			_, err = models.QueryUserToken(username)
 			if err == nil {
-				this.Data["json"] = &map[string]interface{}{"status": "SUCCESS"}
+				this.Data["json"] = &map[string]interface{}{"status": "SUCCESS", "username": username}
 			}
 		}
 	} else {
+		// 删除 tokenString,使客户端登录信息失效
 		userToken, _ := models.QueryUserToken(username)
 		models.DeleteUserToken(userToken)
 		this.Data["json"] = &map[string]interface{}{"status": "SUCCESS"}

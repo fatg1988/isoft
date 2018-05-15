@@ -36,44 +36,38 @@ func init() {
 
 func LoginFilter(ctx *context.Context) {
 	if !IsWhiteUrl(ctx) { // 判断是否是白名单中的地址
-		hasLogin := false
+		successLogin := false // 标记登录信息有效性
 		// 从 cookie 中获取 token
 		tokenString := ctx.GetCookie("token")
 		if tokenString != "" {
-			username, err := ValidateAndParseJWT(tokenString)
+			resp, err := http.Get(isoft_sso_url + "/user/checkOrInValidateTokenString?tokenString=" + tokenString + "&operateType=check")
+			defer resp.Body.Close()
 			if err == nil {
-				resp, err := http.Get(isoft_sso_url + "/user/checkOrInValidateTokenString?tokenString=" + tokenString + "&operateType=check")
-				defer resp.Body.Close()
+				body, err := ioutil.ReadAll(resp.Body)
 				if err == nil {
-					body, err := ioutil.ReadAll(resp.Body)
-					if err == nil {
-						jsonStr := string(body)
-						var jsonMap map[string]string
-						json.Unmarshal([]byte(jsonStr), &jsonMap)
-						if jsonMap["status"] == "SUCCESS" {
-							hasLogin = true
-							if ctx.Input.CruSession == nil {
-								// 从未访问过是没有 session 的,需要重新创建
-								ctx.Input.CruSession, _ = globalSessions.SessionStart(ctx.ResponseWriter, ctx.Request)
-								ctx.Input.CruSession.Set("UserName", username)
-							} else {
-								// 登录信息认证通过
-								ctx.Input.CruSession.Set("UserName", username)
-							}
+					jsonStr := string(body)
+					var jsonMap map[string]string
+					json.Unmarshal([]byte(jsonStr), &jsonMap)
+					if jsonMap["status"] == "SUCCESS" {
+						successLogin = true
+						if ctx.Input.CruSession == nil {
+							// 从未访问过是没有 session 的,需要重新创建
+							ctx.Input.CruSession, _ = globalSessions.SessionStart(ctx.ResponseWriter, ctx.Request)
+							ctx.Input.CruSession.Set("UserName", jsonMap["username"])
+						} else {
+							// 登录信息认证通过
+							ctx.Input.CruSession.Set("UserName", jsonMap["username"])
 						}
 					}
 				}
 			} else {
-				// 登录认证信息不通过
-				hasLogin = false
+				successLogin = false
 			}
-		} else {
-			hasLogin = false
-		}
 
-		if !hasLogin {
-			// 前去登录
-			RedirectToLogin(ctx, "")
+			if !successLogin {
+				// 前去登录
+				RedirectToLogin(ctx, "")
+			}
 		}
 	}
 }
