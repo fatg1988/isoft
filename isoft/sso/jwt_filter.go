@@ -63,11 +63,10 @@ func LoginFilter(ctx *context.Context) {
 			} else {
 				successLogin = false
 			}
-
-			if !successLogin {
-				// 前去登录
-				RedirectToLogin(ctx, "")
-			}
+		}
+		if !successLogin {
+			// 前去登录
+			RedirectToLogin(ctx, "")
 		}
 	}
 }
