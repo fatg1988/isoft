@@ -2,7 +2,13 @@
 <module type="WEB_MODULE" version="4">
   <component name="Go" enabled="true" />
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$/isoft" />
+    <content url="file://$MODULE_DIR$/isoft_blog_web" />
+    <content url="file://$MODULE_DIR$/isoft_learning_web" />
+    <content url="file://$MODULE_DIR$/isoft_publisher_web" />
+    <content url="file://$MODULE_DIR$/isoft_quartz_web" />
+    <content url="file://$MODULE_DIR$/isoft_sso_web" />
+    <content url="file://$MODULE_DIR$/isoft_timer_web" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
