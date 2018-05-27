@@ -51,7 +51,6 @@ func init() {
 	}
 
 	registerModel()
-
 	createTable() // 开启自动建表
 }
 
