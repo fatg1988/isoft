@@ -1,0 +1,30 @@
+##########################################################################################################
+CentOS 7 生成SSH连接GitHub的SSH-key
+生成秘钥
+//换成你自己的邮箱
+ssh-keygen -t rsa -C "389093982@qq.com"
+//一直next并记住生成的地址
+Generating public/private rsa key pair.
+Enter file in which to save the key (/root/.ssh/id_rsa):
+Created directory '/root/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /root/.ssh/id_rsa.
+Your public key has been saved in /root/.ssh/id_rsa.pub.
+##########################################################################################################
+进入.ssh 目录提出key
+[root@localhost ~]# cd .ssh
+[root@localhost .ssh]# ls
+id_rsa  id_rsa.pub
+//把显示的内容复制到GitHub的SSHkey配置即可
+[root@localhost .ssh]# cat id_rsa.pub
+##########################################################################################################
+测试
+[root@localhost .ssh]# ssh -T git@github.com
+The authenticity of host 'github.com (192.30.255.113)' can't be established.
+RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.
+Are you sure you want to continue connecting (yes/no)? y
+Please type 'yes' or 'no': yes
+Warning: Permanently added 'github.com,192.30.255.113' (RSA) to the list of known hosts.
+Hi megoc! You've successfully authenticated, but GitHub does not provide shell access.
+##########################################################################################################
