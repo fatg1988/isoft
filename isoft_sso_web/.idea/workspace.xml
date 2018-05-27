@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="699a1250-18c5-405c-a8b8-9a683e0882a7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../github.com/astaxie/beego" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/deploy/Dockerfile" afterPath="$PROJECT_DIR$/deploy/Dockerfile" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
