@@ -15,7 +15,7 @@ MAINTAINER zhourui  389093982@qq.com
 # 安装beego程序包和bee工具
 RUN go get github.com/astaxie/beego && go get github.com/astaxie/beego/orm && go get github.com/beego/bee
 # -u 强制使用网络去更新包和它的依赖包
-RUN go get -u github.com/389093982/isoft_sso_web
+RUN go get -u github.com/389093982/isoft
 
 # 通过开发计算机上容器的8080端口暴露该应用程序
 EXPOSE 8080
