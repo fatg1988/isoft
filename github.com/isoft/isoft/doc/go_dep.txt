@@ -1,0 +1,28 @@
+# 安装dep
+go get -u github.com/golang/dep/cmd/dep
+
+# 在项目目录下运行dep init,初始化,生成 Gopkg.toml 和 Gopkg.lock
+dep init
+
+# 添加约束
+#[[constraint]]
+#  name = "github.com/apodemakeles/ugo"
+#  version = "=0.1.0"
+
+# dep ensure,这个指令类似于install、compile之类,就是根据依赖的配置内容,下载依赖,编译依赖.dep中要结合toml和代码中的import语句,才会真的下载,编译依赖项
+# 工程中引入包、移除包、Gopkg.toml规则修改、不确定情况
+dep ensure
+
+# toml文件记录着current project依赖项project的约束,而并不是应该有哪些project,有哪些project还是要看import了哪些package
+# 实际上除了constraint,还有其他几个约束, 比较重要的有required,ignored,override
+# lock文件是工具生成的,你不应该手工编辑,lock文件的packages对应你import的内容,而revision（一定会有,和type无关）和version则为vendor中源码的真实反映
+
+# 预先添加到vendor中
+dep ensure -add github.com/bitly/go-simplejson
+# 还可以指定依赖的版本
+dep ensure -add github.com/bitly/go-simplejson@=0.4.3
+dep init -gopath -v
+dep ensure -update
+
+# 查看状态
+dep status

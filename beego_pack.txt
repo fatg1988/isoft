@@ -1,4 +1,0 @@
-bee pack -be GOOS=linux
-
-
-..\..\bin\bee.exe pack -be GOOS=linux

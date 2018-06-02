@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<syncfile>
+    <source>D:\zhourui\program\go\goland_workspace\src\isoft\syncfile</source>
+    <target>
+        <name>isoft_deploy_web</name>
+        <value>D:\zhourui\program\go\goland_workspace\src\isoft_deploy_web\common1</value>
+    </target>
+<!--    <target>
+        <name>isoft_sso_web</name>
+        <value>D:\zhourui\program\go\goland_workspace\src\isoft_sso_web\common1</value>
+    </target>
+    <target>
+        <name>isoft_deploy_web</name>
+        <value>D:\zhourui\program\go\goland_workspace\src\isoft_deploy_web\common1</value>
+    </target>
+    <target>
+        <name>isoft_ilearning_web</name>
+        <value>D:\zhourui\program\go\goland_workspace\src\isoft_ilearning_web\common1</value>
+    </target>-->
+</syncfile>

@@ -1,0 +1,6 @@
+端口分配情况
+isoft_sso_web=8080
+isoft_learning_web=8081
+isoft_deploy_web=8082
+isoft_blog_web=8083
+

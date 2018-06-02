@@ -1,0 +1,7 @@
+1、beego 新建web应用
+..\bin\bee.exe new quickstart
+
+
+2、beego 项目打包
+bee pack -be GOOS=linux
+..\bin\bee.exe pack -be GOOS=linux
